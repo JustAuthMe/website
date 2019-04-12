@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #3598db;
+    font-family: Helvetica, verdana, sans-serif;
+    height: 82vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    flex: 3;
+    background: url(img/logo-small.png) no-repeat center;
+    background-size: 200px 97px;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.social-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    width: 30px;
+}
+
+.social a img {
+    width: 100%;
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.question {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+.email {
+    width: 300px;
+    max-width: 95%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Helvetica, verdana, sans-serif;
+}
+
+.submit {
+    display: inline-block;
+    background: #27ae60;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: Helvetica, verdana, sans-serif;
+    margin-left: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.alert {
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    text-align: center;
+    background: #2ecc71;
+    padding: 20px 40px;
+    color: white;
+    box-sizing: border-box;
+    transition-duration: .8s;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex: 4;
+    }
+
+    .logo {
+        flex: 2;
+        background-size: 120px 58px;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submit {
+        width: 300px;
+        max-width: 95%;
+        height: 40px;
+        margin: 20px 0 0;
+    }
+}
