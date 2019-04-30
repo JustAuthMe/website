@@ -27,16 +27,16 @@
 		<div class="social-container">
 			<div class="social">
 				<a href="https://www.facebook.com/JustAuthMe-317070005657717" target="_blank" rel="noopener" title="Facebook">
-					<img src="img/facebook.png" src="Instagram Logo" />
+					<img src="img/facebook.png" alt="Instagram Logo" />
 				</a>
 				<a href="https://twitter.com/JustAuthMe" target="_blank" rel="noopener" title="Twitter">
-					<img src="img/twitter.png" src="Instagram Logo" />
+					<img src="img/twitter.png" alt="Instagram Logo" />
 				</a>
 				<a href="https://instagram.com/justauthme" target="_blank" rel="noopener" title="Instagram">
-					<img src="img/instagram.png" src="Instagram Logo" />
+					<img src="img/instagram.png" alt="Instagram Logo" />
 				</a>
-                <a href="mailto:jeremy@justauth.me" target="_blank" rel="noopener" title="Email">
-                    <img src="img/email.png" src="Email Logo" />
+                <a href="mailto:head@justauth.me" target="_blank" rel="noopener" title="E-Mail">
+                    <img src="img/email.png" alt="E-Mail Logo" />
                 </a>
 			</div>
 		</div>
@@ -45,15 +45,5 @@
             var user_lang = '<?= substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) ?>';
         </script>
         <script type="text/javascript" src="script.js"></script>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17914901-13"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-17914901-13');
-		</script>
 	</body>
 </html>

@@ -4,6 +4,7 @@ body {
     background: #3598db;
     font-family: Helvetica, verdana, sans-serif;
     height: 82vh;
+    min-height: 666px;
     margin: 0;
     padding: 0;
 }
@@ -46,6 +47,7 @@ body {
     display: flex;
     width: 200px;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .social a {
