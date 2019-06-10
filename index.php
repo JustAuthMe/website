@@ -35,7 +35,7 @@
 				<a href="https://instagram.com/justauthme" target="_blank" rel="noopener" title="Instagram">
 					<img src="img/instagram.png" alt="Instagram Logo" />
 				</a>
-                <a href="mailto:head@justauth.me" target="_blank" rel="noopener" title="E-Mail">
+                <a href="mailto:contact@justauth.me" target="_blank" rel="noopener" title="E-Mail">
                     <img src="img/email.png" alt="E-Mail Logo" />
                 </a>
 			</div>
