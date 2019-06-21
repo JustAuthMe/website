@@ -28,8 +28,9 @@ function loadAjax() {
     return xhr;
 }
 
-function submitForm() {
-    var email = document.getElementsByClassName('email')[0].value;
+function submitForm(index) {
+    index = index || 0;
+    var email = document.getElementsByClassName('email')[index].value;
     var xhr = loadAjax();
     xhr.open('POST', 'customer.php', true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -52,7 +53,7 @@ function submitForm() {
     xhr.send('email=' + encodeURIComponent(email));
 }
 
-var alert = document.getElementsByClassName('alert')[0];
+var alert = document.getElementsByClassName('my-alert')[0];
 var alertText = document.getElementsByClassName('alert-text')[0];
 var time_out = null;
 
@@ -99,7 +100,7 @@ var lang = {
 
 var langToUse = user_lang === 'fr' ? 'fr' : 'en';
 var l = lang[langToUse];
-document.getElementsByClassName('text')[0].innerHTML = l.baseline;
+/*document.getElementsByClassName('text')[0].innerHTML = l.baseline;
 document.getElementsByClassName('question')[0].innerHTML = l.question;
 document.getElementsByClassName('email')[0].placeholder = l.placeholder;
-document.getElementsByClassName('submit')[0].innerHTML = l.submit;
+document.getElementsByClassName('submit')[0].innerHTML = l.submit;*/

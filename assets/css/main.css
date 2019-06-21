@@ -3611,7 +3611,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #4696e5;
+		background-color: #3598db;
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
@@ -4147,3 +4147,24 @@ input, select, textarea {
 		}
 
 	}
+
+.my-alert {
+	position: fixed;
+	z-index: 42;
+	top: -200px;
+	width: 100%;
+	text-align: center;
+	background: #2ecc71;
+	padding: 20px 40px;
+	color: white;
+	box-sizing: border-box;
+	transition-duration: .8s;
+}
+
+.my-close {
+	position: absolute;
+	right: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	color: white !important;
+}
