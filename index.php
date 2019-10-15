@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>JustAuth.Me - Coming soon</title>
+		<title>JustAuth.Me - Prochainement</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel=icon type="image/png" href="images/icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -13,10 +14,10 @@
         <span class="alert-text"></span>
     </div>
 		<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<h1><a href="#">JustAuth.Me</a></h1>
-					<p>Passwordless identity provider</p>
+            <header id="header">
+                <div class="content">
+                    <img src="images/logo_big.png" width="280px" />
+                    <p>L'identité numérique, sans mot de passe.</p>
                     <form method="post" action="" onsubmit="submitForm();return false">
                         <ul class="actions">
                             <li><input class="email" type="email" placeholder="Adresse E-Mail" name="email" required /></li>
@@ -26,9 +27,9 @@
                     <ul class="actions">
                         <li><a href="#two" class="button icon solid fa-chevron-down scrolly">En savoir plus</a></li>
                     </ul>
-				</div>
-				<div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="" /></div></div>
-			</header>
+                </div>
+                <div class="image phone"><div class="inner"><img src="images/screen.jpg" alt="" /></div></div>
+            </header>
 
 		<!-- Two -->
 			<section id="two" class="wrapper">
@@ -38,18 +39,18 @@
 						<div class="content">
 							<h3>Connectez-vous partout</h3>
 							<p>
-                                Dites adieu aux formulaires interminables, aux mots de passe, aux codes reçus par SMS,
-                                et profitez simplement des sites web et des applications que vous aimez, en vous laissant
-                                porter par la simplicité de JustAuth.Me. Installez l'app, renseignez des informations
-                                basiques vous concernant, et connectez-vous sur tous les sites et applis de nos partenaires
-                                en un clin d'oeil.
+                                Dites adieu aux formulaires interminables, aux mots de passe, aux codes reçus par SMS.
+                                Profitez simplement des sites web et des applications que vous aimez en vous laissant
+                                porter par la simplicité de JustAuth.Me. Installez l'application, renseignez des
+                                informations basiques vous concernant, et connectez-vous sur tous les sites et applis de
+                                nos partenaires en un clin d'oeil.
                             </p>
 						</div>
 					</section>
 					<section class="spotlight">
 						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
 						<div class="content">
-							<h3>- de complexité, + de sécurité</h3>
+							<h3>Plus de sécurité</h3>
 							<p>
                                 Les informations vous concernant sont stockées uniquement sur votre smartphone et c'est le
                                 système biométrique de celui-ci qui sert à vous authentifier: le concept même du mot de
@@ -63,10 +64,10 @@
                         <div class="content">
                             <h3>Contrôlez votre vie privée</h3>
                             <p>
-                                Gérez les sites & applis sur lesquelles vous êtes inscrit, demandez une suppression
-                                de vos comptes et informations et créez plusieurs profils pour ne pas dévoiler votre
-                                véritable identité. Et comme nous ne stockons pas vos informations, nous
-                                ne savons pas qui vous êtes !
+                                Gérez les sites et applications sur lesquelles vous êtes inscrit, demandez une
+                                suppression de vos comptes et informations et créez plusieurs profils pour ne pas
+                                dévoiler votre véritable identité. Etant donné que nous ne stockons pas vos informations,
+                                nous ne savons pas qui vous êtes !
                             </p>
                         </div>
                     </section>
@@ -78,7 +79,7 @@
                                 Que vous souhaitiez vous connecter depuis un ordinateur, une tablette ou un téléphone,
                                 que vous soyez un utilisateur d'iOS ou d'Android, de Windows ou de Linux, JustAuth.Me
                                 fonctionne de la même manière partout, en vous offrant toujours la meilleure expérience.
-                                La seule chose requise est votre smartphone. Rien de plus à posséder, installer ou configurer.
+                                Vous n'avez besoin que de votre smartphone. Rien de plus à posséder, installer ou configurer.
                             </p>
                         </div>
                     </section>
