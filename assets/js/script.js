@@ -122,8 +122,7 @@ function loadAnalytics() {
         '    _paq.push([\'setSiteId\', \'1\']);' +
         '    var d=document, g=d.createElement(\'script\'), s=d.getElementsByTagName(\'script\')[0];' +
         '    g.type=\'text/javascript\'; g.async=true; g.defer=true; g.src=u+\'matomo.js\'; s.parentNode.insertBefore(g,s);' +
-        '})();' +
-        'console.log("Analytics loaded");';
+        '})();';
 
     const script = document.createElement('script');
     script.type = 'text/javascript';
