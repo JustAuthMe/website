@@ -1,5 +1,5 @@
 function loadAjax() {
-    var xhr = null;
+    let xhr = null;
 
     if (window.XMLHttpRequest || window.ActiveXObject)
     {
@@ -28,10 +28,9 @@ function loadAjax() {
     return xhr;
 }
 
-function submitForm(index) {
-    index = index || 0;
-    var email = document.getElementsByClassName('email')[index].value;
-    var xhr = loadAjax();
+function submitForm() {
+    const email = document.getElementsByClassName('email')[0].value;
+    const xhr = loadAjax();
     xhr.open('POST', 'customer.php', true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
@@ -44,6 +43,8 @@ function submitForm(index) {
                 openAlert('error', l.alert.invalid);
             } else if (xhr.status === 403) {
                 openAlert('error', l.alert.banned);
+            } else if (xhr.status === 409) {
+                openAlert('error', l.alert.exists);
             } else if (xhr.status === 429) {
                 openAlert('error', l.alert.wait);
             }
@@ -53,9 +54,9 @@ function submitForm(index) {
     xhr.send('email=' + encodeURIComponent(email));
 }
 
-var alert = document.getElementsByClassName('my-alert')[0];
-var alertText = document.getElementsByClassName('alert-text')[0];
-var time_out = null;
+const alert = document.getElementsByClassName('my-alert')[0];
+const alertText = document.getElementsByClassName('alert-text')[0];
+let time_out = null;
 
 function openAlert(type, text) {
     window.clearTimeout(time_out);
@@ -71,12 +72,13 @@ function closeAlert() {
     alert.style.top = '-200px';
 }
 
-var lang = {
+const lang = {
     en: {
         alert: {
             congrats: 'Congrats! You have been successfully registered on our mailing list!',
             invalid: 'You have to enter a valid E-Mail address.',
             banned: 'You have been banned.',
+            exists: 'This E-Mail address already exists on our mailing list.',
             wait: 'Please wait 5 seconds between every registration.'
         },
         baseline: 'Login everywhere without even thinking about it. Coming soon...',
@@ -89,7 +91,8 @@ var lang = {
             congrats: 'Félicitations ! Vous êtes bien enregistré sur nos listes de diffusion !',
             invalid: 'Merci d\'entrer une addresse E-Mail valide.',
             banned: 'Vous avez été banni.',
-            wait: 'Merci d\'attendre 5 secondes entre chaque enregistrement'
+            exists: 'Cette adresse E-Mail est déjà inscrite dans nos listes de diffusion.',
+            wait: 'Merci d\'attendre 5 secondes entre chaque enregistrement.'
         },
         baseline: 'Connectez-vous partout sans même y penser. Prochainement...',
         question: 'Voudriez-vous être informé de notre lancement ?',
@@ -98,9 +101,54 @@ var lang = {
     }
 };
 
-var langToUse = user_lang === 'fr' ? 'fr' : 'en';
-var l = lang[langToUse];
+const langToUse = user_lang === 'fr' ? 'fr' : 'en';
+const l = lang[langToUse];
 /*document.getElementsByClassName('text')[0].innerHTML = l.baseline;
 document.getElementsByClassName('question')[0].innerHTML = l.question;
 document.getElementsByClassName('email')[0].placeholder = l.placeholder;
 document.getElementsByClassName('submit')[0].innerHTML = l.submit;*/
+
+
+const localStorageKey = 'cookieChoice';
+const cookiesChoice = localStorage.getItem(localStorageKey);
+
+function loadAnalytics() {
+    const matomo = 'var _paq = window._paq || [];' +
+        '_paq.push([\'trackPageView\']);' +
+        '_paq.push([\'enableLinkTracking\']);' +
+        '(function() {' +
+        '    var u="//analytics.justauth.me/";' +
+        '    _paq.push([\'setTrackerUrl\', u+\'matomo.php\']);' +
+        '    _paq.push([\'setSiteId\', \'1\']);' +
+        '    var d=document, g=d.createElement(\'script\'), s=d.getElementsByTagName(\'script\')[0];' +
+        '    g.type=\'text/javascript\'; g.async=true; g.defer=true; g.src=u+\'matomo.js\'; s.parentNode.insertBefore(g,s);' +
+        '})();' +
+        'console.log("Analytics loaded");';
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    try {
+        script.appendChild(document.createTextNode(matomo));
+        document.body.appendChild(script);
+    } catch (e) {
+        script.text = matomo;
+        document.body.appendChild(script);
+    }
+}
+
+function setCookiesChoice(choice) {
+    if (choice) {
+        loadAnalytics();
+    }
+
+    localStorage.setItem(localStorageKey, choice ? 'ok' : 'ko');
+    document.getElementById('cookies_prompt').style.display = 'none';
+}
+
+if (cookiesChoice === 'ok' || cookiesChoice === 'ko') {
+    document.getElementById('cookies_prompt').style.display = 'none';
+}
+
+if (cookiesChoice === 'ok') {
+    loadAnalytics();
+}

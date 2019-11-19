@@ -1,11 +1,13 @@
 <?php
+require_once 'config.php';
+
 abstract class DB {
     private static
         $instance = null,
-        $db_host = 'localhost',
-        $db_name = 'jam_website',
-        $db_user = 'root',
-        $db_pass = '73PdgCwR8kPG1nkuLe9SR9xtYE68yse8';
+        $db_host = DB_HOST,
+        $db_name = DB_NAME,
+        $db_user = DB_USER,
+        $db_pass = DB_PASS;
 
     public static function get(): PDO {
         if (self::$instance == null) {
@@ -46,6 +48,16 @@ if ($res['cnt'] > 0) {
 
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     header('HTTP/1.1 400 Bad request');
+    die;
+}
+
+$req = DB::get()->prepare("SELECT COUNT(*) AS cnt FROM customer WHERE email = ?");
+$req->execute([$_POST['email']]);
+$res = $req->fetch();
+$req->closeCursor();
+
+if ($res['cnt'] > 0) {
+    header('HTTP/1.1 409 Conflict');
     die;
 }
 
