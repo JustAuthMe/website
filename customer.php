@@ -1,5 +1,5 @@
 <?php
-require_once 'config.example.php';
+require_once 'config.dist.php';
 
 abstract class DB {
     private static
