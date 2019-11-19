@@ -8,6 +8,7 @@
         <link rel=icon type="image/png" href="images/icon.png">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
+
     <body class="is-preload">
         <div class="my-alert">
             <span class="my-close icon regular fa-times-circle" onclick="closeAlert()" title="Close"></span>
