@@ -8,5 +8,5 @@
 
 const ROUTES = [
     'home' => 'home',
-    'api' => []
+    'p' => 'page'
 ];

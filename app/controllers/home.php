@@ -1,3 +1,7 @@
 <?php
-\PitouFW\Core\Data::get()->add('TITLE', 'Accueil');
-\PitouFW\Core\Controller::renderView('home/home');
+
+use PitouFW\Core\Controller;
+use PitouFW\Core\Data;
+
+Data::get()->add('TITLE', 'Accueil');
+Controller::renderView('home/home');
