@@ -1,2 +1,20 @@
-*.pdf
-config.dist.php
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+*.iws
+/out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+.project
+.cache/
+.settings/
+.buildpath
+vendor/
+*.dist.php
+qr.php
+entity_gen.php
+demo/
+log/*.log
