@@ -28,3 +28,11 @@ $(function(){
         navMain.collapse('hide');
     });
 });
+
+document.getElementsByClassName('chevron-link')[0].onclick = e => {
+    activeItem.classList.remove('active');
+    const solutionItem = document.querySelector('.nav-item.solution');
+    solutionItem.classList.add('active');
+    activeItem = solutionItem;
+    return true;
+};

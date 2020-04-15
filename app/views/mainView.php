@@ -45,15 +45,17 @@ use PitouFW\Core\Request;
                             <a class="nav-link" href="<?= WEBROOT ?>#team">L'équipe</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Développeurs</a>
+                            <a class="nav-link" target="_blank" rel="noopener" href="https://console.justauth.me">
+                                Développeurs
+                            </a>
                         </li>
                     </ul>
-                    <a href="https://beta.justauth.me/rescue" class="btn btn-primary lock d-lg-none mt-3">
+                    <a href="https://core.justauth.me/rescue" target="_blank" rel="noopener" class="btn btn-primary lock d-lg-none mt-3">
                         <i class="fa fa-lock"></i>
                         Verrouiller mon compte
                     </a>
                 </div>
-                <a href="https://beta.justauth.me/rescue" class="btn btn-outline-primary lock d-none d-lg-block">
+                <a href="https://core.justauth.me/rescue" target="_blank" rel="noopener" class="btn btn-outline-primary lock d-none d-lg-block">
                     <i class="fa fa-lock"></i>
                     Verrouiller mon compte
                 </a>
@@ -71,7 +73,7 @@ use PitouFW\Core\Request;
             </nav>
             <div class="copyright mb-4">Copyright &copy; 2019<?= Date('Y') > 2019 ? ' - ' . date('Y') : '' ?> JustAuthMe SAS</div>
             <nav class="legal mb-5">
-                <a href="#">Mention légales</a> - <a href="<?= WEBROOT ?>p/privacy-policy">Politique de confidentialité</a>
+                <a href="#">Mention légales</a> - <a href="<?= WEBROOT ?>p/politique-de-confidentialite">Politique de confidentialité</a>
             </nav>
         </footer>
 
