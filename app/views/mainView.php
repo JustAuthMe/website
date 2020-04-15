@@ -44,8 +44,11 @@ use PitouFW\Core\Request;
                         <li class="nav-item team">
                             <a class="nav-link" href="<?= WEBROOT ?>#team">L'équipe</a>
                         </li>
+                        <li class="nav-item <?= strpos(Request::get()->getArg(1), 'foire') !== false ? 'active' : '' ?>">
+                            <a class="nav-link" href="<?= WEBROOT ?>p/foire-aux-questions">FAQ</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" rel="noopener" href="https://console.justauth.me">
+                            <a class="nav-link" target="_blank" rel="noopener" href="https://developers.justauth.me">
                                 Développeurs
                             </a>
                         </li>
