@@ -91,8 +91,8 @@ use PitouFW\Core\Request;
                     </div>
                     <div class="modal-body">
                         <p>
-                            Contactez-nous et nous nous occuperons avec vous d'implémenter
-                            <strong>JustAuthMe</strong> sur votre site !
+                            En attendant le portail dédié aux développeurs, contactez-nous pour
+                            implémenter <strong>JustAuthMe</strong> sur votre site !
                         </p>
                     </div>
                     <div class="modal-footer">
