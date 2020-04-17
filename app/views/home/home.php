@@ -8,6 +8,7 @@
             simplicité de JustAuthMe.
         </p>
         <nav class="stores">
+            <div class="overlay"></div>
             <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_fr.png" /></a>
             <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/google_fr.png" /></a>
         </nav>

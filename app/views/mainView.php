@@ -48,7 +48,7 @@ use PitouFW\Core\Request;
                             <a class="nav-link" href="<?= WEBROOT ?>p/foire-aux-questions">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" rel="noopener" href="https://developers.justauth.me">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#devModal">
                                 Développeurs
                             </a>
                         </li>
@@ -79,6 +79,29 @@ use PitouFW\Core\Request;
                 <a href="#">Mention légales</a> - <a href="<?= WEBROOT ?>p/politique-de-confidentialite">Politique de confidentialité</a>
             </nav>
         </footer>
+
+        <div class="modal" tabindex="-1" role="dialog" id="devModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Vous êtes développeur ?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Contactez-nous et nous nous occuperons avec vous d'implémenter
+                            <strong>JustAuthMe</strong> sur votre site !
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="mailto:partnership@justauth.me" class="btn btn-primary">Nous contacter</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 		<script type="text/javascript" src="<?= JS.'jquery.min.js' ?>"></script>
 		<script type="text/javascript" src="<?= JS.'popper.min.js' ?>"></script>
