@@ -36,3 +36,7 @@ document.getElementsByClassName('chevron-link')[0].onclick = e => {
     activeItem = solutionItem;
     return true;
 };
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

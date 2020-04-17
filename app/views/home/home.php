@@ -8,7 +8,7 @@
             simplicité de JustAuthMe.
         </p>
         <nav class="stores">
-            <div class="overlay"></div>
+            <div class="overlay" data-toggle="tooltip" data-placement="top" title="Disponible très bientôt !"></div>
             <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_fr.png" /></a>
             <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/google_fr.png" /></a>
         </nav>

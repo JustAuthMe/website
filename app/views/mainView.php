@@ -44,9 +44,9 @@ use PitouFW\Core\Request;
                         <li class="nav-item team">
                             <a class="nav-link" href="<?= WEBROOT ?>#team">L'équipe</a>
                         </li>
-                        <li class="nav-item <?= strpos(Request::get()->getArg(1), 'foire') !== false ? 'active' : '' ?>">
+                        <!-- <li class="nav-item <?= strpos(Request::get()->getArg(1), 'foire') !== false ? 'active' : '' ?>">
                             <a class="nav-link" href="<?= WEBROOT ?>p/foire-aux-questions">FAQ</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#devModal">
                                 Développeurs
