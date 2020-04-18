@@ -18,6 +18,18 @@ use PitouFW\Core\Request;
 	</head>
 
 	<body>
+        <div class="my-cookies" id="cookies_prompt">
+            <aside class="actions">
+                <button onclick="setCookiesChoice(true)" class="btn btn-primary">Accepter</button>
+                <button onclick="setCookiesChoice(false)" class="btn btn-primary ml-2">Refuser</button>
+            </aside>
+            <p>
+                Ce site utilise des cookies à des fins de statistiques de visites, en interne uniquement et grâce au
+                logiciel auto-hébergé <a href="https://fr.matomo.org/why-matomo/" target="_blank">Matomo</a>, sans aucune
+                utilisation de tracker externe. Pour nous autoriser à inclure votre visite de notre site dans nos
+                statistiques, cliquez sur "Accepter". Sinon, cliquez sur "Refuser".
+            </p>
+        </div>
         <header class="header fixed-top">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="<?= WEBROOT ?>">
