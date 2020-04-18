@@ -29,13 +29,15 @@ $(function(){
     });
 });
 
-document.getElementsByClassName('chevron-link')[0].onclick = e => {
-    activeItem.classList.remove('active');
-    const solutionItem = document.querySelector('.nav-item.solution');
-    solutionItem.classList.add('active');
-    activeItem = solutionItem;
-    return true;
-};
+if (document.getElementsByClassName('chevron-link').length > 0) {
+    document.getElementsByClassName('chevron-link')[0].onclick = e => {
+        activeItem.classList.remove('active');
+        const solutionItem = document.querySelector('.nav-item.solution');
+        solutionItem.classList.add('active');
+        activeItem = solutionItem;
+        return true;
+    };
+}
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
