@@ -9,9 +9,11 @@ use PitouFW\Entity\Page;
 if (Persist::exists('Page', 'route', Request::get()->getArg(1))) {
     /** @var Page $page */
     $page = Persist::readBy('Page', 'route', Request::get()->getArg(1));
-    if ($page->isPublished()) {
-        $page->setViews($page->getViews() + 1);
-        Persist::update($page);
+    if ($page->isPublished() || (isset($_GET['render_key']) && $_GET['render_key'] === PAGE_RENDERING_KEY)) {
+        if ($page->isPublished()) {
+            $page->setViews($page->getViews() + 1);
+            Persist::update($page);
+        }
 
         $parsedown = new Parsedown();
         Data::get()->add('TITLE', $page->getTitle());

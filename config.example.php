@@ -15,3 +15,5 @@ const DB_PASS = 'secret';
 const REDIS_HOST = '127.0.0.1';
 const REDIS_PORT = 6379;
 const REDIS_PASS = 'secret';
+
+const PAGE_RENDERING_KEY = 'xxxxx';
