@@ -56,9 +56,9 @@ use PitouFW\Core\Request;
                         <li class="nav-item team">
                             <a class="nav-link" href="<?= WEBROOT ?>#team">L'équipe</a>
                         </li>
-                        <!-- <li class="nav-item <?= strpos(Request::get()->getArg(1), 'foire') !== false ? 'active' : '' ?>">
+                        <li class="nav-item <?= strpos(Request::get()->getArg(1), 'foire') !== false ? 'active' : '' ?>">
                             <a class="nav-link" href="<?= WEBROOT ?>p/foire-aux-questions">FAQ</a>
-                        </li> -->
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="modal" data-target="#devModal">
                                 Développeurs
@@ -88,7 +88,7 @@ use PitouFW\Core\Request;
             </nav>
             <div class="copyright mb-4">Copyright &copy; 2019<?= Date('Y') > 2019 ? ' - ' . date('Y') : '' ?> JustAuthMe SAS</div>
             <nav class="legal mb-5">
-                <a href="#">Mention légales</a> - <a href="<?= WEBROOT ?>p/politique-de-confidentialite">Politique de confidentialité</a>
+                <a href="<?= WEBROOT ?>p/mentions-legales">Mention légales</a> - <a href="<?= WEBROOT ?>p/politique-de-confidentialite">Politique de confidentialité</a>
             </nav>
         </footer>
 

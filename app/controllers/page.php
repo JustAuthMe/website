@@ -14,6 +14,7 @@ if (Persist::exists('Page', 'route', Request::get()->getArg(1))) {
         Persist::update($page);
 
         $parsedown = new Parsedown();
+        Data::get()->add('TITLE', $page->getTitle());
         Data::get()->add('parser', new Parsedown());
         Data::get()->add('page', $page);
         Controller::renderView('page/markdown');
