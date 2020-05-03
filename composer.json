@@ -1,0 +1,12 @@
+{
+    "name": "phpeter/pitoufw",
+    "authors": [
+        {
+            "name": "PHPeter",
+            "email": "phpeter@phpeter.fr"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "^1.7"
+    }
+}
