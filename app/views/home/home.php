@@ -7,11 +7,18 @@
             des applications que vous aimez en vous laissant porter par la
             simplicité de JustAuthMe.
         </p>
-        <nav class="stores">
+        <nav class="stores mb-3">
             <div class="overlay" data-toggle="tooltip" data-placement="top" title="Disponible très bientôt !"></div>
             <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_fr.png" /></a>
             <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/google_fr.png" /></a>
         </nav>
+        <form action="" method="post" class="form-inline mb-4">
+            <input type="email" name="email" id="email" required placeholder="Rester informé par e-mail" class="form-control mr-2" />
+            <button type="submit" class="btn btn-outline-primary">
+                <i class="fa fa-paper-plane"></i>
+                Envoyer
+            </button>
+        </form>
     </div>
     <div class="about_mockup col-md-6 mt-5 mt-lg-0">
         <img class="float-none float-md-right mr-0 mr-md-5" src="<?= IMG ?>home-mockup.png" />

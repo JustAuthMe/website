@@ -17,3 +17,6 @@ const REDIS_PORT = 6379;
 const REDIS_PASS = 'secret';
 
 const PAGE_RENDERING_KEY = 'xxxxx';
+
+const JAM_API = 'http://192.168.0.9/JustAuth.Me/core/public/api/';
+const JAM_INTERNAL_API_KEY = 'xxxxx';

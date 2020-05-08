@@ -88,7 +88,9 @@ use PitouFW\Core\Request;
             </nav>
             <div class="copyright mb-4">Copyright &copy; 2019<?= Date('Y') > 2019 ? ' - ' . date('Y') : '' ?> JustAuthMe SAS</div>
             <nav class="legal mb-5">
-                <a href="<?= WEBROOT ?>p/mentions-legales">Mention légales</a> - <a href="<?= WEBROOT ?>p/politique-de-confidentialite">Politique de confidentialité</a>
+                <a href="<?= WEBROOT ?>p/mentions-legales">Mention légales</a> -
+                <a href="<?= WEBROOT ?>p/politique-de-confidentialite">Politique de confidentialité</a> -
+                <a href="<?= WEBROOT ?>p/conditions-generales-dutilisation">Conditions générales d'utilisation</a>
             </nav>
         </footer>
 
@@ -115,9 +117,34 @@ use PitouFW\Core\Request;
             </div>
         </div>
 
+        <div class="modal" tabindex="-1" role="dialog" id="subModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Abonnement à la Newsletter</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <i class="d-block text-center mb-3 fa fa-<?= isset($status) && $status === 'success' ? 'check-circle text-success' : 'times text-danger' ?>" style="font-size: 70px"></i>
+                        <p><?= isset($error) ? html_entity_decode($error) : 'Félicitations ! Vous êtes maintenant inscrit à notre Newsletter. Vous recevrez désormais par e-mail les nouveautés concernant l\'avancement de <strong>JustAuthMe</strong> !' ?></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 		<script type="text/javascript" src="<?= JS.'jquery.min.js' ?>"></script>
 		<script type="text/javascript" src="<?= JS.'popper.min.js' ?>"></script>
 		<script type="text/javascript" src="<?= JS.'bootstrap.min.js' ?>"></script>
 		<script type="text/javascript" src="<?= JS.'script.js' ?>"></script>
+        <?php if (isset($status)): ?>
+            <script type="text/javascript">
+                $('#subModal').modal();
+            </script>
+        <?php endif ?>
 	</body>
 </html>
