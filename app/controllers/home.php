@@ -24,6 +24,11 @@ if (POST) {
                 Data::get()->add('status', 'success');
                 break;
 
+            case 400:
+                Data::get()->add('status', 'error');
+                Data::get()->add('error', 'L\'adresse e-mail que vous avez renseignée ne semble pas valide. Veuillez réessayer.');
+                break;
+
             case 409:
                 Data::get()->add('status', 'error');
                 Data::get()->add('error', 'Vous êtes déjà inscrit à la newsletter. C\'est plutôt une bonne nouvelle :)');

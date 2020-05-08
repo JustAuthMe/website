@@ -473,4 +473,8 @@ body {
     #team .member {
         display: block;
     }
+
+    .newsletter-subscribe {
+        width: 100%;
+    }
 }

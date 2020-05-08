@@ -13,8 +13,8 @@
             <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/google_fr.png" /></a>
         </nav>
         <form action="" method="post" class="form-inline mb-4">
-            <input type="email" name="email" id="email" required placeholder="Rester informé par e-mail" class="form-control mr-2" />
-            <button type="submit" class="btn btn-outline-primary">
+            <input type="email" name="email" id="email" required placeholder="Rester informé par e-mail" class="form-control mr-sm-2 mb-2" />
+            <button type="submit" class="btn btn-outline-primary mb-2 newsletter-subscribe">
                 <i class="fa fa-paper-plane"></i>
                 Envoyer
             </button>
