@@ -232,7 +232,7 @@
             </div>
             <div class="member">
                 <img src="<?= IMG ?>team_kassandra.jpg" />
-                <div class="name">Kassandra De Clercq</div>
+                <div class="name">Kassandra de Clercq</div>
                 <div class="role">
                     Marketing<br />
                     Relation clients B2B
