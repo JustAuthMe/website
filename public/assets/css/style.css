@@ -192,6 +192,7 @@ body {
 
 .engagement .text p {
     margin: 0;
+    text-align: justify;
 }
 
 .engagement:nth-child(2n) .picture {
@@ -200,7 +201,7 @@ body {
     margin-left: 50px;
 }
 
-.engagement:nth-child(2n) .text {
+.engagement:nth-child(2n) .text h4 {
     text-align: right;
 }
 
@@ -224,7 +225,7 @@ body {
 
 #pricing {
     background: #3498db linear-gradient(135deg, rgba(42, 121, 176, 1) 0%, rgba(52, 152, 219, 1) 100%);
-    min-height: 80vh;
+    min-height: 100vh;
     padding-top: 60px;
 }
 
@@ -292,24 +293,24 @@ body {
 .price-plan .name {
     text-transform: uppercase;
     color: #888;
-    letter-spacing: 5px;
-    font-size: 40px;
+    letter-spacing: 4px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 .price-plan .price {
     font-weight: 900;
     color: #888;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .price-plan .price sup {
     font-weight: normal;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .price-plan .price .small {
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .price-plan .features {
