@@ -21,7 +21,18 @@
         </form>
     </div>
     <div class="about_mockup col-md-6 mt-5 mt-lg-0">
-        <img class="float-none float-md-right mr-0 mr-md-5" src="<?= IMG ?>home-mockup.png" />
+        <div class="mockup_container float-none float-md-right mr-md-5">
+            <div class="mockup_content">
+            <?php if (IS_SAFARI): ?>
+                <img src="<?= IMG ?>home-mockup-fr.png" />
+            <?php else: ?>
+                <video autoplay="true" controls="false" loop="true" muted="true" id="mockup_video">
+                    <source src="<?= ASSETS ?>demo.mp4" type="video/mp4" />
+                </video>
+                <img src="<?= IMG ?>home-mockup.png" />
+            <?php endif ?>
+            </div>
+        </div>
     </div>
     <div class="chevron d-none d-md-block">
         <a href="<?= WEBROOT ?>#solution" class="chevron-link"><i class="fa fa-chevron-down"></i></a>

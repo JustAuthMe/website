@@ -27,6 +27,7 @@ define('JS', ASSETS.'js/');
 define('FONTS', ASSETS.'fonts/');
 define('IMG', ASSETS.'img/');
 define('VENDORS', ASSETS.'vendors/');
+define('IS_SAFARI', strpos($_SERVER['HTTP_USER_AGENT'], 'Safari') && !strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome'));
 
 spl_autoload_register(function ($classname) {
     $ext = '.php';

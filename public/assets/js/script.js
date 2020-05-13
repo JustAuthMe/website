@@ -85,3 +85,12 @@ if (cookiesChoice === 'ok' || cookiesChoice === 'ko') {
 if (cookiesChoice === 'ok') {
     loadAnalytics();
 }
+
+const mv = document.getElementById('mockup_video');
+document.getElementsByClassName('mockup_container')[0].onclick = e => {
+    if (mv.paused) {
+        mv.play();
+    } else {
+        mv.pause();
+    }
+};
