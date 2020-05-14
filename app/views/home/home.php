@@ -26,7 +26,7 @@
             <?php if (IS_SAFARI): ?>
                 <img src="<?= IMG ?>home-mockup-fr.png" />
             <?php else: ?>
-                <video autoplay="true" controls="false" loop="true" muted="true" id="mockup_video">
+                <video autoplay loop muted id="mockup_video">
                     <source src="<?= ASSETS ?>demo.mp4" type="video/mp4" />
                 </video>
                 <img src="<?= IMG ?>home-mockup.png" />
