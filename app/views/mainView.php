@@ -11,7 +11,7 @@ use PitouFW\Core\Request;
 		<link type="text/css" rel="stylesheet" href="<?= CSS . 'normalize.css' ?>" media="screen" />
 		<link type="text/css" rel="stylesheet" href="<?= CSS . 'bootstrap.jam.min.css' ?>" media="screen" />
         <link type="text/css" rel="stylesheet" href="<?= CSS . 'font-awesome.min.css' ?>" media="screen" />
-		<link type="text/css" rel="stylesheet" href="<?= CSS . 'style.css' ?>" media="screen" />
+		<link type="text/css" rel="stylesheet" href="<?= CSS . 'style.css' ?>?v=1" media="screen" />
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 		<meta name="format-detection" content="telephone=no" />
         <link rel=icon type="image/png" href="<?= IMG ?>icon.png">
@@ -140,7 +140,7 @@ use PitouFW\Core\Request;
 		<script type="text/javascript" src="<?= JS.'jquery.min.js' ?>"></script>
 		<script type="text/javascript" src="<?= JS.'popper.min.js' ?>"></script>
 		<script type="text/javascript" src="<?= JS.'bootstrap.min.js' ?>"></script>
-		<script type="text/javascript" src="<?= JS.'script.js' ?>"></script>
+		<script type="text/javascript" src="<?= JS.'script.js' ?>?v=1"></script>
         <?php if (isset($status)): ?>
             <script type="text/javascript">
                 $('#subModal').modal();
