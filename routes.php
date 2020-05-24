@@ -8,5 +8,6 @@
 
 const ROUTES = [
     'home' => 'home',
-    'p' => 'page'
+    'p' => 'page',
+    'privacy-policy.pdf' => 'privacy-policy'
 ];
