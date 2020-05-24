@@ -8,9 +8,8 @@
             simplicité de JustAuthMe.
         </p>
         <nav class="stores mb-3">
-            <div class="overlay" data-toggle="tooltip" data-placement="top" title="Disponible très bientôt !"></div>
-            <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_fr.png" /></a>
-            <a href="#"><img class="mb-2" src="<?= IMG ?>stores_badges/google_fr.png" /></a>
+            <a href="https://apps.apple.com/fr/app/justauthme/id1506495629"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_fr.png" /></a>
+            <a href="https://play.google.com/store/apps/details?id=me.justauth.app.android"><img class="mb-2" src="<?= IMG ?>stores_badges/google_fr.png" /></a>
         </nav>
         <form action="" method="post" class="form-inline mb-4">
             <input type="email" name="email" id="email" required placeholder="Rester informé par e-mail" class="form-control mr-sm-2 mb-2" />
