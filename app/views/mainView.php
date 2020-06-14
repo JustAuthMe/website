@@ -60,9 +60,7 @@ use PitouFW\Core\Request;
                             <a class="nav-link" href="<?= WEBROOT ?>p/foire-aux-questions">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#devModal">
-                                Développeurs
-                            </a>
+                            <a class="nav-link" href="https://developers.justauth.me" target="_blank" rel="noopener">Développeurs</a>
                         </li>
                     </ul>
                     <a href="https://core.justauth.me/rescue" target="_blank" rel="noopener" class="btn btn-primary lock d-lg-none mt-3">
@@ -93,29 +91,6 @@ use PitouFW\Core\Request;
                 <a href="<?= WEBROOT ?>p/conditions-generales-dutilisation">Conditions générales d'utilisation</a>
             </nav>
         </footer>
-
-        <div class="modal" tabindex="-1" role="dialog" id="devModal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Vous êtes développeur ?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            En attendant le portail dédié aux développeurs, contactez-nous pour
-                            implémenter <strong>JustAuthMe</strong> sur votre site !
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="mailto:partnership@justauth.me" class="btn btn-primary">Nous contacter</a>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="modal" tabindex="-1" role="dialog" id="subModal">
             <div class="modal-dialog" role="document">
