@@ -8,7 +8,7 @@ const PROD_HOST = 'localhost';
 const LOGGING = true;
 
 const DB_HOST = 'localhost';
-const DB_NAME = 'pitoufw';
+const DB_NAME = 'jam_website';
 const DB_USER = 'root';
 const DB_PASS = 'secret';
 
