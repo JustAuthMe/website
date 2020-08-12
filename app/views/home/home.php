@@ -38,11 +38,11 @@ use function PitouFW\Core\t;
                             </div>
                         </form>
                         <p class="page-header-text small mb-0">
-                            <?= L::home_header_form_notice(L::links_pages_legal_terms) ?>
+                            <?= L::home_header_form_notice(WEBROOT . 'p/' . L::links_pages_legal_terms) ?>
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 z-1" data-aos="fade-left">
+                <div class="col-lg-6 z-1 d-none d-lg-block" data-aos="fade-left">
                     <div class="device-wrapper mx-auto mb-n15">
                         <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                             <div class="screen">
@@ -177,7 +177,6 @@ use function PitouFW\Core\t;
             </div>
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="card pricing h-100 soon">
-                    <div class="overlay"></div>
                     <div class="card-body p-5">
                         <div class="text-center">
                             <div class="badge badge-danger badge-pill badge-marketing badge-sm text-white"><?= L::home_pricing_plans_standard_badge ?></div>
