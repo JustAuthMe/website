@@ -12,31 +12,35 @@ use function PitouFW\Core\t;
                     <p class="page-header-text mb-5"><?= L::home_header_concept(NAME) ?></p>
                     <div class="mb-5 mb-lg-0">
                         <a class="mr-3" href="<?= L::links_stores_apple ?>">
-                            <img src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
+                            <img class="mb-2" src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
                         </a>
                         <a href="<?= L::links_stores_google ?>">
-                            <img src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
+                            <img class="mb-2" src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
                         </a>
                     </div>
-                    <form action="" method="post">
-                        <div class="form-row justify-content-start mt-5">
-                            <div class="col-lg-6 col-md-8">
-                                <div class="form-group mr-0 mr-lg-2">
-                                    <label class="sr-only" for="email"><?= L::home_header_form_label ?></label>
-                                    <input class="form-control form-control-solid rounded-pill" id="email" name="email"
-                                           type="email" required placeholder="<?= L::home_header_form_label ?>" />
+                    <div class="mb-5 mb-lg-0">
+                        <form action="" method="post">
+                            <div class="form-row justify-content-start mt-5">
+                                <div class="col-lg-6 col-md-8">
+                                    <div class="form-group mr-0 mr-lg-2">
+                                        <label class="sr-only" for="email"><?= L::home_header_form_label ?></label>
+                                        <input class="form-control form-control-solid rounded-pill" id="email" name="email"
+                                               type="email" required placeholder="<?= L::home_header_form_label ?>" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="form-group">
+                                        <button class="btn btn-blue btn-block btn-marketing rounded-pill" type="submit">
+                                            <?= L::home_header_form_submit ?>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4">
-                                <button class="btn btn-blue btn-block btn-marketing rounded-pill" type="submit">
-                                    <?= L::home_header_form_submit ?>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                    <p class="page-header-text small mb-0">
-                        <?= L::home_header_form_notice(L::links_pages_legal_terms) ?>
-                    </p>
+                        </form>
+                        <p class="page-header-text small mb-0">
+                            <?= L::home_header_form_notice(L::links_pages_legal_terms) ?>
+                        </p>
+                    </div>
                 </div>
                 <div class="col-lg-6 z-1" data-aos="fade-left">
                     <div class="device-wrapper mx-auto mb-n15">
@@ -102,16 +106,16 @@ use function PitouFW\Core\t;
 <section class="bg-light py-10">
     <div class="container">
         <div class="row brands text-gray-500 align-items-center justify-content-around mb-5">
-            <a href="https://restau-sans-contact.fr">
+            <a href="https://restau-sans-contact.fr" class="mb-2">
                 <img src="<?= IMG ?>partners/rsc.png" height="45" alt="Restau sans contact" />
             </a>
-            <a href="https://my-seedbox.com">
+            <a href="https://my-seedbox.com" class="mb-2">
                 <img src="<?= IMG ?>partners/msb.png" height="45" alt="My Seedbox" />
             </a>
-            <a href="https://odysseeverte.fr">
+            <a href="https://odysseeverte.fr" class="mb-2">
                 <img src="<?= IMG ?>partners/ov.png" height="45" alt="L'Odyssée Verte" />
             </a>
-            <a href="https://pulseheberg.com">
+            <a href="https://pulseheberg.com" class="mb-2">
                 <img src="<?= IMG ?>partners/ph.png" height="45" alt="PulseHeberg" />
             </a>
         </div>
@@ -215,7 +219,7 @@ use function PitouFW\Core\t;
         <h1><?= L::home_team_title ?></h1>
         <div class="content">
             <div class="board">
-                <div class="member">
+                <div class="member mb-3 mb-lg-5">
                     <a href="https://peter.cauty.fr">
                         <img src="<?= IMG ?>team/peter.jpg">
                     </a>
@@ -223,7 +227,7 @@ use function PitouFW\Core\t;
                     <div class="status"><?= L::home_team_peter_line1 ?></div>
                     <div class="role"><?= L::home_team_peter_line2 ?></div>
                 </div>
-                <div class="member">
+                <div class="member mb-3 mb-lg-5">
                     <a href="https://fr.linkedin.com/in/jeremypgn">
                         <img src="<?= IMG ?>team/jeremy.jpg">
                     </a>
@@ -233,7 +237,7 @@ use function PitouFW\Core\t;
                 </div>
             </div>
             <div>
-                <div class="member">
+                <div class="member mb-3">
                     <img src="<?= IMG ?>team/antoine.jpg">
                     <div class="name">Antoine Fogel</div>
                     <div class="role">
@@ -241,7 +245,7 @@ use function PitouFW\Core\t;
                         <?= L::home_team_antoine_line2 ?>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member mb-3">
                     <a href="https://instagram.com/kya.schizophrenia">
                         <img src="<?= IMG ?>team/kassandra.jpg">
                     </a>
@@ -251,7 +255,7 @@ use function PitouFW\Core\t;
                         <?= L::home_team_kassandra_line2 ?>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member mb-3">
                     <a href="https://www.linkedin.com/in/alessandro-taccola-b42231a9">
                         <img src="<?= IMG ?>team/alessandro.jpg">
                     </a>
@@ -261,7 +265,7 @@ use function PitouFW\Core\t;
                         <?= L::home_team_alessandro_line2 ?>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member mb-3">
                     <a href="https://victorlabro.fr">
                         <img src="<?= IMG ?>team/victor.jpg">
                     </a>
@@ -271,7 +275,7 @@ use function PitouFW\Core\t;
                         <?= L::home_team_victor_line2 ?>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member mb-3">
                     <a href="https://charley.sedeau.com">
                         <img src="<?= IMG ?>team/charley.jpg">
                     </a>
@@ -293,8 +297,8 @@ use function PitouFW\Core\t;
                 <p class="lead mb-5 mb-lg-0"><?= L::home_download_subtitle ?></p>
             </div>
             <div class="col-lg-6 text-lg-right">
-            <a class="mr-3" href="<?= L::links_stores_apple ?>"><img src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
-                <a href="<?= L::links_stores_google ?>"><img src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
+                <a class="mr-3" href="<?= L::links_stores_apple ?>"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
+                <a href="<?= L::links_stores_google ?>"><img class="mb-2" src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
             </div>
         </div>
     </div>

@@ -78,10 +78,6 @@ html {
     display: inline-block;
 }
 
-#team .board .member {
-    margin-bottom: 60px;
-}
-
 #team .member img {
     width: 100px;
     height: 100px;
@@ -141,5 +137,9 @@ html {
 @media (max-width: 575px) {
     #team .member {
         display: block;
+    }
+
+    .page-header {
+        padding-top: 4rem;
     }
 }
