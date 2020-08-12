@@ -1,0 +1,125 @@
+meta:
+  description: 'Avec JustAuthMe, oubliez vos mots de passe et dites adieu aux formulaires. Une seule application pour se connecter partout, sans effort.'
+links:
+  pages:
+    faq: 'foire-aux-questions'
+    legal:
+      notice: 'mentions-legales'
+      privacy: 'politique-de-confidentialite'
+      terms: 'conditions-generales-dutilisation'
+  stores:
+    apple: 'https://apps.apple.com/fr/app/justauthme/id1506495629'
+    google: 'https://play.google.com/store/apps/details?id=me.justauth.app.android'
+baseline: 'Oubliez vos mots de passe.'
+navbar:
+  home: 'Accueil'
+  concept: 'Le concept'
+  pricing: 'Tarifs'
+  faq: 'FAQ'
+  developers: 'Développeurs'
+  rescue: 'Mon compte'
+footer:
+  products:
+    label: 'Produits'
+    app: 'Application'
+    panel: 'Panel développeurs'
+    prestashop: 'Prestashop'
+    wordpress: 'Wordpress'
+  resources:
+    label: 'Ressources'
+    doc: 'Documentation'
+    github: 'Github'
+    blog: 'Blog'
+    rescue: 'Smartphone perdu'
+  contact:
+    label: 'Contact'
+    press: 'Presse'
+    partnerships: 'Partenariats'
+    marketing: 'Marketing'
+    other: 'Autre'
+  legal:
+    label: 'Légal'
+    notice: 'Mentions légales'
+    privacy: 'Confidentialité'
+    terms: 'CGU'
+  copyright:
+    copyright: 'Copyright'
+    all_rights: 'Tous droits réservés'
+  langs:
+    fr: 'Passer en Français'
+    en: 'Passer en Anglais'
+newsletter:
+  title: 'Abonnement à la newsletter'
+  close: 'Fermer'
+  body:
+    success: 'Félicitations ! Vous êtes maintenant inscrit à notre Newsletter. Vous recevrez désormais par e-mail les nouveautés concernant l''avancement de <strong>%s</strong> !'
+    error:
+      bad_request: 'L''adresse e-mail que vous avez renseignée ne semble pas valide. Veuillez réessayer.'
+      conflict: 'Vous êtes déjà inscrit à la newsletter. C''est plutôt une bonne nouvelle :)'
+      too_many: 'Vous devez attendre 10 secondes au moins entre chaque abonnement. Un peu de patience ;)'
+      unknow: 'Une erreur inconnue est survenue durant la demande d''abonnement. Si le problème persiste, merci de <a href="mailto:support@justauth.me">contacter le support</a>.'
+home:
+  title: 'Oubliez vos mots de passe'
+  header:
+    concept: 'Dites adieu aux formulaires, aux mots de passe, aux codes. Téléchargez l''application %s et connectez-vous partout sans même y penser !'
+    form:
+      label: 'Restez informé par e-mail'
+      submit: 'Envoyer'
+      notice: 'En vous inscrivant, vous acceptez nos <a href="%s">CGU</a>.'
+  advantages:
+    app:
+      title: 'Une application unique'
+      desc: 'Une fois téléchargée, l''application %s vous permet de vous connecter sur tous les sites compatibles.'
+    security:
+      title: 'Le top de la sécurité'
+      desc: 'Notre solution possède une bien meilleure sécurité qu''un système avec mot de passe, y compris avec validation par SMS.'
+    privacy:
+      title: 'Votre vie privée préservée'
+      desc: 'Vos informations restent sur votre smartphone et nous ne savons ni qui vous êtes ni quand et où vous vous connectez'
+  pricing:
+    title: 'Nos tarifs'
+    subtitle: 'Des prix simples et sans surprise'
+    month: 'mois'
+    plans:
+      free:
+        badge: 'Offre gratuite'
+        line1: 'Une identité'
+        line2: 'Connexions illimitées'
+        line3: 'Assistance par e-mail 5j/7 7h/j'
+        line4: 'Sauvegarde cloud sécurisée'
+        line5: 'Partage de comptes'
+        submit: 'Choisir cette formule'
+      standard:
+        badge: 'Prochainement'
+        line1: 'Jusqu''à 10 identités'
+        line2: 'Connexions illimités'
+        line3: 'Assistance par tchat 24/7'
+        line4: 'Sauvegarde cloud sécurisée'
+        line5: 'Partage de compte'
+        submit: 'Choisir cette formule'
+  team:
+    title: 'Notre équipe'
+    peter:
+      line1: 'Président'
+      line2: 'Développeur fullstack'
+    jeremy:
+      line1: 'Directeur général'
+      line2: 'Développeur web'
+    antoine:
+      line1: 'Marketing'
+      line2: 'Communication'
+    kassandra:
+      line1: 'Marketing'
+      line2: 'relation clients B2B'
+    alessandro:
+      line1: 'DevOps'
+      line2: 'Développeur mobile'
+    victor:
+      line1: 'Réalisateur'
+      line2: 'Community manager'
+    charley:
+      line1: 'Administrateur'
+      line2: 'systèmes & réseaux'
+  download:
+    title: 'Prêt à oublier vos mots de passe ?'
+    subtitle: 'Téléchargez gratuitement notre application dès maintenant !'

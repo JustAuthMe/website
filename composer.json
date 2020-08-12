@@ -8,6 +8,7 @@
     ],
     "require": {
         "erusev/parsedown": "^1.7",
-      "ext-json": "*"
+        "ext-json": "*",
+        "philipp15b/php-i18n": "^4.0"
     }
 }

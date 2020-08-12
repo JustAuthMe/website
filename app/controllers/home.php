@@ -22,29 +22,30 @@ if (POST) {
         switch ((int) substr($http_response_header[0], 9, 3)) {
             case 200:
                 Data::get()->add('status', 'success');
+                Data::get()->add('newsletter_msg', L::newsletter_body_success);
                 break;
 
             case 400:
                 Data::get()->add('status', 'error');
-                Data::get()->add('error', 'L\'adresse e-mail que vous avez renseignée ne semble pas valide. Veuillez réessayer.');
+                Data::get()->add('newsletter_msg', L::newsletter_body_error_bad_request);
                 break;
 
             case 409:
-                Data::get()->add('status', 'error');
-                Data::get()->add('error', 'Vous êtes déjà inscrit à la newsletter. C\'est plutôt une bonne nouvelle :)');
+                Data::get()->add('status', 'success');
+                Data::get()->add('newsletter_msg', L::newsletter_body_error_conflict);
                 break;
 
             case 429:
                 Data::get()->add('status', 'error');
-                Data::get()->add('error', 'Vous devez attendre 10 secondes au moins entre chaque abonnement. Un peu de patience ;)');
+                Data::get()->add('newsletter_msg', L::newsletter_body_error_too_many);
                 break;
 
             default:
                 Data::get()->add('status', 'error');
-                Data::get()->add('error', 'Une erreur inconnue est survenue durant la demande d\'abonnement. Si le problème persiste, merci de <a href="mailto:support@justauth.me">contacter le support</a>');
+                Data::get()->add('newsletter_msg', L::newsletter_body_error_unknow);
         }
     }
 }
 
-Data::get()->add('TITLE', 'Accueil');
+Data::get()->add('TITLE', L::home_title);
 Controller::renderView('home/home');

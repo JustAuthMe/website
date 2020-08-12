@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#engagements {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1000px;
+}
+
+.engagement {
+    height: 320px;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.engagement:last-of-type {
+    border: none;
+}
+
+.engagement .picture {
+    width: 240px;
+    height: 240px;
+    float: left;
+    border-radius: 116px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+.engagement .picture img {
+    border-radius: 116px;
+}
+
+.engagement .text {
+    height: 240px;
+}
+
+.engagement .text h4 {
+    padding-bottom: 10px;
+}
+
+.engagement .text p {
+    margin: 0;
+    text-align: justify;
+}
+
+.engagement:nth-child(2n) .picture {
+    float: right;
+    margin-right: 0;
+    margin-left: 50px;
+}
+
+.engagement:nth-child(2n) .text h4 {
+    text-align: right;
+}
+
+#team {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#team h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#team .content {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0;
+}
+
+#team .member {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+#team .board .member {
+    margin-bottom: 60px;
+}
+
+#team .member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+#team .member .name {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#team .member .status {
+    color: #333;
+    font-size: 16px;
+}
+
+#team .member .role {
+    color: #888;
+    font-size: 14px;
+}
+
+.soon .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: cente;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #8883;
+}
+
+.page p {
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .engagement {
+        height: auto;
+    }
+
+    .engagement .text,
+    .engagement:nth-child(2n) .text {
+        height: auto;
+        text-align: center;
+    }
+
+    .engagement .picture,
+    .engagement:nth-child(2n) .picture {
+        margin: 0  auto 40px;
+        float: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #team .member {
+        display: block;
+    }
+}

@@ -1,0 +1,125 @@
+meta:
+  description: 'With JustAuthMe, forget your passwords and say goodbye to forms. One app to log yourself in everywhere, without effort.'
+links:
+  pages:
+    faq: 'foire-aux-questions'
+    legal:
+      notice: 'mentions-legales'
+      privacy: 'politique-de-confidentialite'
+      terms: 'conditions-generales-dutilisation'
+  stores:
+    apple: 'https://apps.apple.com/us/app/justauthme/id1506495629'
+    google: 'https://play.google.com/store/apps/details?id=me.justauth.app.android'
+baseline: 'Forget your passwords.'
+navbar:
+  home: 'Home'
+  concept: 'The concept'
+  pricing: 'Pricing'
+  faq: 'FAQ'
+  developers: 'Developers'
+  rescue: 'My account'
+footer:
+  products:
+    label: 'Products'
+    app: 'Application'
+    panel: 'Developers panel'
+    prestashop: 'Prestashop'
+    wordpress: 'Wordpress'
+  resources:
+    label: 'Resources'
+    doc: 'Documentation'
+    github: 'Github'
+    blog: 'Blog'
+    rescue: 'Smartphone lost'
+  contact:
+    label: 'Contact'
+    press: 'Press'
+    partnerships: 'Partnerships'
+    marketing: 'Marketing'
+    other: 'Other'
+  legal:
+    label: 'Legal'
+    notice: 'Legal notice'
+    privacy: 'Privacy policy'
+    terms: 'Terms'
+  copyright:
+    copyright: 'Copyright'
+    all_rights: 'All right reserved'
+  langs:
+    fr: 'Switch to French'
+    en: 'Switch to English'
+newsletter:
+  title: 'Subscribption to the newsletter'
+  close: 'Close'
+  body:
+    success: 'Félicitations ! Vous êtes maintenant inscrit à notre Newsletter. Vous recevrez désormais par e-mail les nouveautés concernant l''avancement de <strong>%s</strong> !'
+    error:
+      bad_request: 'L''adresse e-mail que vous avez renseignée ne semble pas valide. Veuillez réessayer.'
+      conflict: 'Vous êtes déjà inscrit à la newsletter. C''est plutôt une bonne nouvelle :)'
+      too_many: 'Vous devez attendre 10 secondes au moins entre chaque abonnement. Un peu de patience ;)'
+      unknow: 'Une erreur inconnue est survenue durant la demande d''abonnement. Si le problème persiste, merci de <a href="mailto:support@justauth.me">contacter le support</a>.'
+home:
+  title: 'Forget your passwords'
+  header:
+    concept: 'Say goodbye to forms, to passwords, to codes. Download the %s app and login everywhere without even thinking about it!'
+    form:
+      label: 'Stay tuned by e-mail'
+      submit: 'Send'
+      notice: 'By signing up, you accept our <a href="%s">Terms</a>.'
+  advantages:
+    app:
+      title: 'An unique app'
+      desc: 'Once downloaded, the %s app allows you to login on every compatible website.'
+    security:
+      title: 'Top security'
+      desc: 'Our solution is way more secured than a password system, even with Text confirmation code.'
+    privacy:
+      title: 'Your privacy protected'
+      desc: 'Your informations stay on your smartphone and we do not know who you are nor where and when you log yourself in'
+  pricing:
+    title: 'Our price plans'
+    subtitle: 'Simples prices without surprise'
+    month: 'month'
+    plans:
+      free:
+        badge: 'Free plan'
+        line1: 'One identity'
+        line2: 'Unlimited logins'
+        line3: 'E-mail support 5d/7 7h/d'
+        line4: 'Secured cloud save'
+        line5: 'Accounts sharing'
+        submit: 'Choose Free plan'
+      standard:
+        badge: 'Coming soon'
+        line1: 'Up to 10 identities'
+        line2: 'Unlimited logins'
+        line3: 'Chat support 24/7'
+        line4: 'Secured cloud save'
+        line5: 'Accounts charing'
+        submit: 'Choose this plan'
+  team:
+    title: 'The team'
+    peter:
+      line1: 'Chairman'
+      line2: 'Fullstack developer'
+    jeremy:
+      line1: 'CEO'
+      line2: 'Web developer'
+    antoine:
+      line1: 'Marketing'
+      line2: 'Communication'
+    kassandra:
+      line1: 'Marketing'
+      line2: 'B2B customers relationship'
+    alessandro:
+      line1: 'DevOps'
+      line2: 'Mobile developer'
+    victor:
+      line1: 'Director'
+      line2: 'Community manager'
+    charley:
+      line1: 'Networks & systems'
+      line2: 'administrator'
+  download:
+    title: 'Ready to forget your passwords?'
+    subtitle: 'Download our app for free right now!'

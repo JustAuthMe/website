@@ -1,4 +1,10 @@
 <?php
+
+use PitouFW\Core\Controller;
+use PitouFW\Core\Request;
+use PitouFW\Core\Router;
+use PitouFW\Core\Translator;
+
 session_start();
 
 define('ROOT', str_replace('public/index.php', '', $_SERVER['SCRIPT_FILENAME']));
@@ -54,13 +60,19 @@ spl_autoload_register(function ($classname) {
     }
 });
 
-if (\PitouFW\Core\Request::get()->getArg(0) == 'api' && empty($_POST)) {
+if (Request::get()->getArg(0) == 'api' && empty($_POST)) {
     if ($json_data = json_decode(file_get_contents('php://input'), true)) {
         $_POST = $json_data;
     }
 }
 
-require_once \PitouFW\Core\Router::get()->getPathToRequire();
-if (\PitouFW\Core\Request::get()->getArg(0) == 'api') {
-    \PitouFW\Core\Controller::renderView('json/json', false);
+if (isset($_GET['lang'])) {
+    $_SESSION['lang'] = $_GET['lang'];
+}
+
+Translator::init();
+
+require_once Router::get()->getPathToRequire();
+if (Request::get()->getArg(0) == 'api') {
+    Controller::renderView('json/json', false);
 }
