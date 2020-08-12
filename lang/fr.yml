@@ -63,7 +63,7 @@ home:
   header:
     concept: 'Dites adieu aux formulaires, aux mots de passe, aux codes. Téléchargez l''application %s et connectez-vous partout sans même y penser !'
     form:
-      label: 'Restez informé par e-mail'
+      label: 'Restez informés par e-mail'
       submit: 'Envoyer'
       notice: 'En vous inscrivant, vous acceptez nos <a href="%s">CGU</a>.'
   advantages:
