@@ -17,7 +17,7 @@ navbar:
   pricing: 'Pricing'
   faq: 'FAQ'
   developers: 'Developers'
-  rescue: 'My account'
+  rescue: 'Lost phone?'
 footer:
   products:
     label: 'Products'

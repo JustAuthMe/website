@@ -36,7 +36,7 @@ use PitouFW\Core\Request;
                             <li class="nav-item"><a class="nav-link" href="<?= WEBROOT ?>p/<?= L::links_pages_faq ?>"><?= L::navbar_faq ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="https://developers.justauth.me/"><?= L::navbar_developers ?> </a></li>
                         </ul>
-                        <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://core.justauth.me/rescue"><?= L::navbar_rescue ?> <i class="fas fa-user"></i></a>
+                        <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://core.justauth.me/rescue"><i class="fas fa-lock"></i>&nbsp;&nbsp;<?= L::navbar_rescue ?></i></a>
                     </div>
                 </div>
             </nav>
