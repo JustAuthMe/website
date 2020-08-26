@@ -11,6 +11,11 @@ links:
     apple: 'https://apps.apple.com/us/app/justauthme/id1506495629'
     google: 'https://play.google.com/store/apps/details?id=me.justauth.app.android'
 baseline: 'Forget your passwords.'
+cookies:
+  text: 'This website use cookies for internal analytics purposes only, thanks to the self-hosted <a href="https://fr.matomo.org/why-matomo/" target="_blank">Matomo</a> software, without use of any external tracker. To authorize us to include your visit of this website in our analytics data, click "Accept". Otherwise, click "Decline".'
+  buttons:
+    accept: 'Accept'
+    decline: 'Decline'
 navbar:
   home: 'Home'
   concept: 'The concept'
