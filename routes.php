@@ -9,5 +9,6 @@
 const ROUTES = [
     'home' => 'home',
     'p' => 'page',
+    'app' => 'app',
     'privacy-policy.pdf' => 'privacy-policy'
 ];
