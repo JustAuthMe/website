@@ -4,9 +4,9 @@ links:
   pages:
     faq: 'foire-aux-questions'
     legal:
-      notice: 'mentions-legales'
-      privacy: 'politique-de-confidentialite'
-      terms: 'conditions-generales-dutilisation'
+      notice: 'legal-notice'
+      privacy: 'privacy-policy'
+      terms: 'terms-of-service'
   stores:
     apple: 'https://apps.apple.com/us/app/justauthme/id1506495629'
     google: 'https://play.google.com/store/apps/details?id=me.justauth.app.android'
