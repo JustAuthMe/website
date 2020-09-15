@@ -21,6 +21,7 @@ navbar:
   concept: 'The concept'
   pricing: 'Pricing'
   faq: 'FAQ'
+  blog: 'Blog'
   developers: 'Developers'
   rescue: 'Lost phone?'
 footer:

@@ -21,6 +21,7 @@ navbar:
   concept: 'Le concept'
   pricing: 'Tarifs'
   faq: 'FAQ'
+  blog: 'Blog'
   developers: 'Développeurs'
   rescue: 'Mobile perdu ?'
 footer:
