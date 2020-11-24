@@ -81,10 +81,10 @@ use PitouFW\Core\Request;
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                                 <div class="text-uppercase-expanded text-xs mb-4"><?= L::footer_resources_label ?></div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><a href="https://developers.justauth.me/documentation"><?= L::footer_resources_doc ?></a></li>
-                                    <li class="mb-2"><a href="https://github.com/justauthme"><?= L::footer_resources_github ?></a></li>
+                                    <li class="mb-2"><a href="<?= WEBROOT ?>press"><?= L::footer_resources_press ?></a></li>
                                     <li class="mb-2"><a href="https://blog.justauth.me/"><?= L::footer_resources_blog ?></a></li>
-                                    <li class="mb-2"><a href="https://core.justauth.me/rescue"><?= L::footer_resources_rescue ?></a></li>
+                                    <li class="mb-2"><a href="https://github.com/justauthme"><?= L::footer_resources_github ?></a></li>
+                                    <li class="mb-2"><a href="https://developers.justauth.me/documentation"><?= L::footer_resources_doc ?></a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">

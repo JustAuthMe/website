@@ -36,7 +36,7 @@ footer:
     doc: 'Documentation'
     github: 'Github'
     blog: 'Blog'
-    rescue: 'Smartphone lost'
+    press: 'Press kit'
   contact:
     label: 'Contact'
     press: 'Press'
@@ -129,3 +129,22 @@ home:
   download:
     title: 'Ready to forget your passwords?'
     subtitle: 'Download our app for free right now!'
+press:
+  release:
+    title: 'Press realease (FR)'
+    text: 'Our press release is available at download here:'
+  logo:
+    title: 'Logos and graphical chart (FR)'
+    text: 'Download our logos and the associated graphical chart here:'
+  video:
+    title: 'Presentation videos (FR)'
+    text: 'Find our presentation videos on Youtube:'
+  contact:
+    title: 'Contacts'
+    head:
+      name: 'Name'
+      job: 'Job'
+      contact: 'Contact'
+    president: 'President'
+    ceo: 'CEO'
+    cmo: 'CMO'

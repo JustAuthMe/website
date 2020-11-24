@@ -153,6 +153,11 @@ html {
     }
 }
 
+.press-team th,
+.press-team td {
+    padding: .5rem 1rem;
+}
+
 @media (max-width: 575px) {
     #team .member {
         display: block;

@@ -36,7 +36,7 @@ footer:
     doc: 'Documentation'
     github: 'Github'
     blog: 'Blog'
-    rescue: 'Smartphone perdu'
+    press: 'Kit presse'
   contact:
     label: 'Contact'
     press: 'Presse'
@@ -129,3 +129,22 @@ home:
   download:
     title: 'Prêt à oublier vos mots de passe ?'
     subtitle: 'Téléchargez gratuitement notre application dès maintenant !'
+press:
+  release:
+    title: 'Communiqué de presse'
+    text: 'Notre communiqué de presse est disponible au téléchargement ici :'
+  logo:
+    title: 'Logos et charte graphique'
+    text: 'Téléchargez nos logos et la charte graphique associée ici :'
+  video:
+    title: 'Vidéos de présentation'
+    text: 'Retrouvez nos vidéos de présentation sur Youtube'
+  contact:
+    title: 'Contacts'
+    head:
+      name: 'Nom'
+      job: 'Fonction'
+      contact: 'Contact'
+    president: 'Président'
+    ceo: 'Directeur général'
+    cmo: 'Directeur de la communication'
