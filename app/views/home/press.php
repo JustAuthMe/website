@@ -14,15 +14,6 @@
 </header>
 <section class="bg-white py-10 page">
     <div class="container">
-        <h2 class="mb-3"><?= L::press_release_title ?></h2>
-        <p><?= L::press_release_text ?></p>
-        <p>
-            <a href="<?= ASSETS ?>JustAuthMe_press_release.pdf">
-                <i class="fas fa-file-pdf"></i>
-                JustAuthMe_press_release.pdf
-            </a>
-        </p>
-        <hr class="my-5" />
         <h2 class="mb-3"><?= L::press_logo_title ?></h2>
         <p><?= L::press_logo_text ?></p>
         <p>
