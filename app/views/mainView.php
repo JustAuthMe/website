@@ -44,9 +44,9 @@ use PitouFW\Core\Request;
                             <li class="nav-item"><a class="nav-link" href="<?= WEBROOT ?>#pricing"><?= L::navbar_pricing ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="<?= WEBROOT ?>p/<?= L::links_pages_faq ?>"><?= L::navbar_faq ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="https://blog.justauth.me/"><?= L::navbar_blog ?> </a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://developers.justauth.me/"><?= L::navbar_developers ?> </a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://core.justauth.me/rescue"><?= L::navbar_rescue ?> </a></li>
                         </ul>
-                        <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://core.justauth.me/rescue"><i class="fas fa-lock"></i>&nbsp;&nbsp;<?= L::navbar_rescue ?></i></a>
+                        <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://developers.justauth.me/"><i class="fas fa-star"></i>&nbsp;&nbsp;<?= L::navbar_developers ?></i></a>
                     </div>
                 </div>
             </nav>
@@ -61,7 +61,7 @@ use PitouFW\Core\Request;
                         <div class="footer-brand"><?= NAME ?></div>
                         <div class="mb-3"><?= L::baseline ?></div>
                         <div class="icon-list-social mb-5">
-                            <a class="icon-list-social-link" href="https://twitter.com/justauthme"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-list-social-link" href="https://twitter.com/justauthmefr"><i class="fab fa-twitter"></i></a>
                             <a class="icon-list-social-link" href="https://www.facebook.com/justauthme/"><i class="fab fa-facebook"></i></a>
                             <a class="icon-list-social-link" href="https://www.instagram.com/justauthme/"><i class="fab fa-instagram"></i></a>
                             <a class="icon-list-social-link" href="https://www.linkedin.com/company/justauthme/"><i class="fab fa-linkedin"></i></a>
@@ -74,8 +74,8 @@ use PitouFW\Core\Request;
                                 <ul class="list-unstyled mb-0">
                                     <li class="mb-2"><a href="#"><?= L::footer_products_app ?></a></li>
                                     <li class="mb-2"><a href="https://developers.justauth.me"><?= L::footer_products_panel ?></a></li>
-                                    <!-- <li class="mb-2"><a href="#"><?= L::footer_products_prestashop ?></a></li>
-                                    <li class="mb-2"><a href="#"><?= L::footer_products_wordpress ?></a></li> -->
+                                    <!-- <li class="mb-2"><a href="#"><?= L::footer_products_prestashop ?></a></li> -->
+                                    <li class="mb-2"><a href="https://github.com/justauthme/wordpress-plugin"><?= L::footer_products_wordpress ?></a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">

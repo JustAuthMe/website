@@ -22,7 +22,7 @@ navbar:
   pricing: 'Pricing'
   faq: 'FAQ'
   blog: 'Blog'
-  developers: 'Developers'
+  developers: 'Add to my website'
   rescue: 'Lost phone?'
 footer:
   products:
@@ -30,7 +30,7 @@ footer:
     app: 'Application'
     panel: 'Developers panel'
     prestashop: 'Prestashop'
-    wordpress: 'Wordpress'
+    wordpress: 'WordPress plugin'
   resources:
     label: 'Resources'
     doc: 'Documentation'
