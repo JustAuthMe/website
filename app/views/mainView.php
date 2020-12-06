@@ -75,7 +75,7 @@ use PitouFW\Core\Request;
                                     <li class="mb-2"><a href="#"><?= L::footer_products_app ?></a></li>
                                     <li class="mb-2"><a href="https://developers.justauth.me"><?= L::footer_products_panel ?></a></li>
                                     <!-- <li class="mb-2"><a href="#"><?= L::footer_products_prestashop ?></a></li> -->
-                                    <li class="mb-2"><a href="https://github.com/justauthme/wordpress-plugin"><?= L::footer_products_wordpress ?></a></li>
+                                    <li class="mb-2"><a href="https://developers.justauth.me/download/wordpress"><?= L::footer_products_wordpress ?></a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
