@@ -20,8 +20,15 @@ use PitouFW\Core\Request;
     <meta property="og:url" content="https://justauth.me" />
     <meta property="twitter:card" content="app" />
     <meta property="twitter:site" content="@justauthmefr" />
+    <meta property="twitter:app:name:iphone" content="<?= NAME ?>" />
     <meta property="twitter:app:id:iphone" content="1506495629" />
+    <meta property="twitter:app:url:iphone" content="jam://home" />
+    <meta property="twitter:app:name:ipad" content="<?= NAME ?>" />
+    <meta property="twitter:app:id:ipad" content="1506495629" />
+    <meta property="twitter:app:url:ipad" content="jam://home" />
+    <meta property="twitter:app:name:googleplay" content="<?= NAME ?>" />
     <meta property="twitter:app:id:googleplay" content="me.justauth.app.android" />
+    <meta property="twitter:app:url:googleplay" content="jam://home" />
 
     <link href="<?= CSS ?>styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="<?= CSS ?>aos.css" />
