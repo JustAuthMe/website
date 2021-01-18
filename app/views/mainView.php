@@ -10,11 +10,24 @@ use PitouFW\Core\Request;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="<?= L::meta_description ?>" />
-    <title><?= NAME . (isset($TITLE) ? ' - ' . $TITLE : '') ?></title>
-    <link href="<?= CSS; ?>styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?= CSS; ?>aos.css" />
-    <link rel="stylesheet" href="<?= CSS; ?>custom.css">
-    <link rel="icon" type="image/x-icon" href="<?= IMG ?>/icon.png" />
+    <title><?= $TITLE ?? L::meta_title ?></title>
+
+    <meta property="og:title" content="<?= $TITLE ?? L::meta_title ?>" />
+    <meta property="og:description" content="<?= L::meta_description ?>" />
+    <meta property="og:site_name" content="<?= NAME ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://justauth.me/assets/img/open-graph.jpg" />
+    <meta property="og:url" content="https://justauth.me" />
+    <meta property="twitter:card" content="app" />
+    <meta property="twitter:site" content="@justauthmefr" />
+    <meta property="twitter:app:id:iphone" content="1506495629" />
+    <meta property="twitter:app:id:googleplay" content="me.justauth.app.android" />
+
+    <link href="<?= CSS ?>styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?= CSS ?>aos.css" />
+    <link rel="stylesheet" href="<?= CSS ?>custom.css">
+    <link rel="icon" type="image/x-icon" href="<?= IMG ?>icon.png" />
+
     <script data-search-pseudo-elements defer src="<?= JS ?>font-awesome.min.js" crossorigin="anonymous"></script>
     <script src="<?= JS ?>feather.min.js" crossorigin="anonymous"></script>
 </head>

@@ -1,4 +1,5 @@
 meta:
+  title: 'JustAuthMe - Oubliez vos mots de passe'
   description: 'Avec JustAuthMe, oubliez vos mots de passe et dites adieu aux formulaires. Une seule application pour se connecter partout, sans effort.'
 links:
   pages:
@@ -65,7 +66,6 @@ newsletter:
       too_many: 'Vous devez attendre 10 secondes au moins entre chaque abonnement. Un peu de patience ;)'
       unknow: 'Une erreur inconnue est survenue durant la demande d''abonnement. Si le problème persiste, merci de <a href="mailto:support@justauth.me">contacter le support</a>.'
 home:
-  title: 'Oubliez vos mots de passe'
   header:
     concept: 'Dites adieu aux formulaires, aux mots de passe, aux codes. Téléchargez l''application %s et connectez-vous partout sans même y penser !'
     form:
