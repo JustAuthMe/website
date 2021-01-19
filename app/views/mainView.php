@@ -1,16 +1,20 @@
 <?php
 
-use PitouFW\Core\Request;
+use function PitouFW\Core\t;
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= t()->getAppliedLang() ?>">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="<?= L::meta_description ?>" />
+    <meta name="robots" content="index, follow" />
     <title><?= $TITLE ?? L::meta_title ?></title>
+
+    <link rel="alternate" hreflang="en" href="https://justauth.me/?lang=en" />
+    <link rel="alternate" hreflang="fr" href="https://justauth.me/?lang=fr" />
 
     <meta property="og:title" content="<?= $TITLE ?? L::meta_title ?>" />
     <meta property="og:description" content="<?= L::meta_description ?>" />
