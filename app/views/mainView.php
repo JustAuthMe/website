@@ -1,5 +1,6 @@
 <?php
 
+use PitouFW\Core\Request;
 use function PitouFW\Core\t;
 
 ?>
@@ -13,6 +14,9 @@ use function PitouFW\Core\t;
     <meta name="robots" content="index, follow" />
     <title><?= $TITLE ?? L::meta_title ?></title>
 
+    <?php if (Request::get()->getArg(0) === 'home'): ?>
+    <link rel=”canonical” href="https://justauth.me/" />
+    <?php endif ?>
     <link rel="alternate" hreflang="en" href="https://justauth.me/?lang=en" />
     <link rel="alternate" hreflang="fr" href="https://justauth.me/?lang=fr" />
 
