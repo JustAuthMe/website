@@ -26,17 +26,8 @@ use function PitouFW\Core\t;
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://justauth.me/assets/img/open-graph.jpg" />
     <meta property="og:url" content="https://justauth.me" />
-    <meta name="twitter:card" content="app" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@justauthmefr" />
-    <meta name="twitter:app:name:iphone" content="<?= NAME ?>" />
-    <meta name="twitter:app:id:iphone" content="1506495629" />
-    <meta name="twitter:app:url:iphone" content="jam://home" />
-    <meta name="twitter:app:name:ipad" content="<?= NAME ?>" />
-    <meta name="twitter:app:id:ipad" content="1506495629" />
-    <meta name="twitter:app:url:ipad" content="jam://home" />
-    <meta name="twitter:app:name:googleplay" content="<?= NAME ?>" />
-    <meta name="twitter:app:id:googleplay" content="me.justauth.app.android" />
-    <meta name="twitter:app:url:googleplay" content="jam://home" />
     <meta name="apple-itunes-app" content="app-id=1506495629" />
 
     <link href="<?= CSS ?>styles.css" rel="stylesheet" />
