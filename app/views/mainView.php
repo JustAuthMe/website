@@ -81,7 +81,7 @@ use function PitouFW\Core\t;
                         <div class="footer-brand"><?= NAME ?></div>
                         <div class="mb-3"><?= L::baseline ?></div>
                         <div class="icon-list-social mb-5">
-                            <a class="icon-list-social-link" href="https://twitter.com/justauthmefr"><i class="fab fa-twitter"></i></a>
+                            <a class="icon-list-social-link" href="https://twitter.com/justauthme"><i class="fab fa-twitter"></i></a>
                             <a class="icon-list-social-link" href="https://www.facebook.com/justauthme/"><i class="fab fa-facebook"></i></a>
                             <a class="icon-list-social-link" href="https://www.instagram.com/justauthme/"><i class="fab fa-instagram"></i></a>
                             <a class="icon-list-social-link" href="https://www.linkedin.com/company/justauthme/"><i class="fab fa-linkedin"></i></a>
