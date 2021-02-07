@@ -59,12 +59,12 @@ newsletter:
   title: 'Subscribption to the newsletter'
   close: 'Close'
   body:
-    success: 'Félicitations ! Vous êtes maintenant inscrit à notre Newsletter. Vous recevrez désormais par e-mail les nouveautés concernant l''avancement de <strong>%s</strong> !'
+    success: 'Congratulations! You''re now registered to our Newsletter. You''ll now receive all the news regarding %s progress straight into your inbox!'
     error:
-      bad_request: 'L''adresse e-mail que vous avez renseignée ne semble pas valide. Veuillez réessayer.'
-      conflict: 'Vous êtes déjà inscrit à la newsletter. C''est plutôt une bonne nouvelle :)'
-      too_many: 'Vous devez attendre 10 secondes au moins entre chaque abonnement. Un peu de patience ;)'
-      unknow: 'Une erreur inconnue est survenue durant la demande d''abonnement. Si le problème persiste, merci de <a href="mailto:support@justauth.me">contacter le support</a>.'
+      bad_request: 'The e-mail address you filled in seems to be invalid. Please try again.'
+      conflict: 'You are already registered to our Newsletter. This is a pretty good news :)'
+      too_many: 'You must wait at least 10 seconds between each registration. Be patient ;)'
+      unknow: 'An unknown error occurred during registration process. If the problem persists, please <a href="mailto:support@justauth.me">contact support</a>.'
 home:
   header:
     concept: 'Say goodbye to forms, to passwords, to codes. Download the %s app and login everywhere without even thinking about it!'

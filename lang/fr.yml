@@ -59,7 +59,7 @@ newsletter:
   title: 'Abonnement à la newsletter'
   close: 'Fermer'
   body:
-    success: 'Félicitations ! Vous êtes maintenant inscrit à notre Newsletter. Vous recevrez désormais par e-mail les nouveautés concernant l''avancement de <strong>%s</strong> !'
+    success: 'Félicitations ! Vous êtes maintenant inscrit à notre Newsletter. Vous recevrez désormais les nouveautés concernant l''avancement de %s directement dans votre boite mail !'
     error:
       bad_request: 'L''adresse e-mail que vous avez renseignée ne semble pas valide. Veuillez réessayer.'
       conflict: 'Vous êtes déjà inscrit à la newsletter. C''est plutôt une bonne nouvelle :)'

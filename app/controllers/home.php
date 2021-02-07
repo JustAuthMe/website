@@ -24,7 +24,7 @@ if (POST) {
         switch ((int) substr($http_response_header[0], 9, 3)) {
             case 200:
                 Data::get()->add('status', 'success');
-                Data::get()->add('newsletter_msg', L::newsletter_body_success);
+                Data::get()->add('newsletter_msg', L::newsletter_body_success(NAME));
                 break;
 
             case 400:
