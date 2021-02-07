@@ -2,11 +2,13 @@
 
 use PitouFW\Core\Controller;
 use PitouFW\Core\Data;
+use function PitouFW\Core\t;
 
 if (POST) {
     if ($_POST['email'] !== '') {
         $postdata = http_build_query([
             'email' => $_POST['email'],
+            'lang' => t()->getAppliedLang(),
             'ip' => $_SERVER['REMOTE_ADDR']
         ]);
         $opts = ['http' => [
