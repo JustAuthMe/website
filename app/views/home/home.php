@@ -1,6 +1,7 @@
 <?php
 
 use function PitouFW\Core\t;
+use function PitouFW\Core\webroot;
 
 ?>
 <header class="page-header page-header-dark bg-gradient-primary-to-secondary">
@@ -38,7 +39,7 @@ use function PitouFW\Core\t;
                             </div>
                         </form>
                         <p class="page-header-text small mb-0">
-                            <?= L::home_header_form_notice(WEBROOT . 'p/' . L::links_pages_legal_terms) ?>
+                            <?= L::home_header_form_notice(webroot() . 'p/' . L::links_pages_legal_terms) ?>
                         </p>
                     </div>
                 </div>

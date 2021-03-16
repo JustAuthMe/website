@@ -1,6 +1,7 @@
 <?php
 
 use PitouFW\Core\Request;
+use function PitouFW\Core\webroot;
 
 switch (Request::get()->getArg(1)) {
     case 'ios':
@@ -12,5 +13,5 @@ switch (Request::get()->getArg(1)) {
         die;
 }
 
-header('location: ' . WEBROOT);
+header('location: ' . webroot());
 die;

@@ -1,6 +1,14 @@
 meta:
   title: 'JustAuthMe - Forget your passwords'
   description: 'With the JustAuthMe app, forget your passwords and say goodbye to forms. Login everywhere effortlessly thanks to biometric.'
+problem: 'It seems like something''s wrong here...'
+back: 'Go back'
+errors:
+  401: 'Authentication required'
+  403: 'Forbidden access'
+  404: 'Page not found'
+  429: 'You have made too many requests, please wait a few minutes.'
+  500: 'Internal server error'
 links:
   pages:
     faq: 'frequently-asked-questions'

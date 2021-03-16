@@ -1,11 +1,13 @@
 <?php
 
 use PitouFW\Core\Request;
+use PitouFW\Entity\Page;
 use function PitouFW\Core\t;
+use function PitouFW\Core\webroot;
 
 ?>
 <!DOCTYPE html>
-<html lang="<?= t()->getAppliedLang() ?>">
+<html lang="<?= Request::get()->getArg(0) === 'p' && isset($page) ? $page->getLang() : t()->getAppliedLang() ?>">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,11 +16,18 @@ use function PitouFW\Core\t;
     <meta name="robots" content="index, follow" />
     <title><?= $TITLE ?? L::meta_title ?></title>
 
-    <?php if (Request::get()->getArg(0) === 'home'): ?>
-    <link rel=”canonical” href="https://justauth.me/" />
+    <?php if (Request::get()->getArg(0) !== 'p'):
+        if (Request::get()->getArg(0) === 'home'): ?>
+            <link rel="canonical" href="https://justauth.me/<?= t()->getAppliedLang() ?>" />
+    <?php endif;
+        foreach (ACCEPTED_LANGUAGES as $lang):
+            if (t()->getAppliedLang() !== $lang): ?>
+                <link rel="alternate" hreflang="<?= $lang ?>" href="https://justauth.me/<?= $lang . Request::get()->getRoute() ?>" />
+            <?php endif;
+        endforeach;
+    else: ?>
+        <link rel="canonical" href="https://justauth.me<?= Request::get()->getRoute() ?>" />
     <?php endif ?>
-    <link rel="alternate" hreflang="en" href="https://justauth.me/?lang=en" />
-    <link rel="alternate" hreflang="fr" href="https://justauth.me/?lang=fr" />
 
     <meta property="og:title" content="<?= $TITLE ?? L::meta_title ?>" />
     <meta property="og:description" content="<?= L::meta_description ?>" />
@@ -53,16 +62,16 @@ use function PitouFW\Core\t;
         <main>
             <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                 <div class="container">
-                    <a class="navbar-brand text-primary" href="<?= WEBROOT; ?>">
+                    <a class="navbar-brand text-primary" href="<?= webroot(); ?>">
                         <img style="height: 1.5rem;" src="<?= IMG ?>logo-txt.svg" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto mr-lg-5">
-                            <li class="nav-item"><a class="nav-link" href="<?= WEBROOT; ?>"><?= L::navbar_home ?> </a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?= webroot(); ?>"><?= L::navbar_home ?> </a></li>
                             <!-- <li class="nav-item"><a class="nav-link" href="#"><?= L::navbar_concept ?> </a></li> -->
-                            <li class="nav-item"><a class="nav-link" href="<?= WEBROOT ?>#pricing"><?= L::navbar_pricing ?> </a></li>
-                            <li class="nav-item"><a class="nav-link" href="<?= WEBROOT ?>p/<?= L::links_pages_faq ?>"><?= L::navbar_faq ?> </a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>#pricing"><?= L::navbar_pricing ?> </a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>p/<?= L::links_pages_faq ?>"><?= L::navbar_faq ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="https://blog.justauth.me/"><?= L::navbar_blog ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="https://core.justauth.me/rescue"><?= L::navbar_rescue ?> </a></li>
                         </ul>
@@ -101,7 +110,7 @@ use function PitouFW\Core\t;
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                                 <div class="text-uppercase-expanded text-xs mb-4"><?= L::footer_resources_label ?></div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><a href="<?= WEBROOT ?>press"><?= L::footer_resources_press ?></a></li>
+                                    <li class="mb-2"><a href="<?= webroot() ?>press"><?= L::footer_resources_press ?></a></li>
                                     <li class="mb-2"><a href="https://blog.justauth.me/"><?= L::footer_resources_blog ?></a></li>
                                     <li class="mb-2"><a href="https://github.com/justauthme"><?= L::footer_resources_github ?></a></li>
                                     <li class="mb-2"><a href="https://developers.justauth.me/documentation"><?= L::footer_resources_doc ?></a></li>
@@ -119,9 +128,9 @@ use function PitouFW\Core\t;
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                                 <div class="text-uppercase-expanded text-xs mb-4"><?= L::footer_legal_label ?></div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><a href="<?= WEBROOT ?>p/<?= L::links_pages_legal_notice ?>"><?= L::footer_legal_notice ?></a></li>
-                                    <li class="mb-2"><a href="<?= WEBROOT ?>p/<?= L::links_pages_legal_privacy ?>"><?= L::footer_legal_privacy ?></a></li>
-                                    <li class="mb-2"><a href="<?= WEBROOT ?>p/<?= L::links_pages_legal_terms ?>"><?= L::footer_legal_terms ?></a></li>
+                                    <li class="mb-2"><a href="<?= webroot() ?>p/<?= L::links_pages_legal_notice ?>"><?= L::footer_legal_notice ?></a></li>
+                                    <li class="mb-2"><a href="<?= webroot() ?>p/<?= L::links_pages_legal_privacy ?>"><?= L::footer_legal_privacy ?></a></li>
+                                    <li class="mb-2"><a href="<?= webroot() ?>p/<?= L::links_pages_legal_terms ?>"><?= L::footer_legal_terms ?></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -131,9 +140,9 @@ use function PitouFW\Core\t;
                 <div class="row align-items-center">
                     <div class="col-md-6 small"><?= L::footer_copyright_copyright ?> &copy; <?= NAME ?> 2019 - <?= date('Y'); ?> &middot; <?= L::footer_copyright_all_rights ?>.</div>
                     <div class="col-md-6 text-md-right small">
-                        <a href="<?= WEBROOT ?>?lang=fr" title="<?= L::footer_langs_fr ?>"><img src="<?= IMG ?>flags/fr.svg" height="20"></a>
+                        <a href="<?= WEBROOT ?>fr" title="<?= L::footer_langs_fr ?>"><img src="<?= IMG ?>flags/fr.svg" height="20"></a>
                         &middot;
-                        <a href="<?= WEBROOT ?>?lang=en" title="<?= L::footer_langs_en ?>"><img src="<?= IMG ?>flags/us.svg" height="20"></a>
+                        <a href="<?= WEBROOT ?>en" title="<?= L::footer_langs_en ?>"><img src="<?= IMG ?>flags/us.svg" height="20"></a>
                     </div>
                 </div>
             </div>

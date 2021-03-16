@@ -7,6 +7,9 @@ const PROD_ENV = false;
 const PROD_HOST = 'localhost';
 const LOGGING = true;
 
+const ACCEPTED_LANGUAGES = ['en', 'fr'];
+const DEFAULT_LANGUAGE = 'en';
+
 const DB_HOST = 'localhost';
 const DB_NAME = 'jam_website';
 const DB_USER = 'root';

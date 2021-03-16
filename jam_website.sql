@@ -31,6 +31,8 @@ USE `jam_website`;
 
 CREATE TABLE IF NOT EXISTS `page` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `lang` varchar(2) NOT NULL,
+  `alternate_to` int DEFAULT NULL,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `route` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
@@ -39,8 +41,15 @@ CREATE TABLE IF NOT EXISTS `page` (
   `updated_at` bigint(20) NOT NULL,
   `published` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `route` (`route`)
+  UNIQUE KEY `route` (`route`),
+  KEY `alternate_to` (`alternate_to`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contraintes pour la table `page`
+--
+ALTER TABLE `page`
+    ADD CONSTRAINT `page_ibfk_1` FOREIGN KEY (`alternate_to`) REFERENCES `page` (`id`) ON DELETE SET NULL ON UPDATE SET NULL;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

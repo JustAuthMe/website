@@ -1,4 +1,8 @@
 <?php
-header('HTTP/1.1 301 Moved Permanently');
-header('location: ' . WEBROOT . 'p/' . L::links_pages_legal_privacy);
+
+use PitouFW\Core\Controller;
+use function PitouFW\Core\webroot;
+
+Controller::http301MovedPermanently();
+header('location: ' . webroot() . 'p/' . L::links_pages_legal_privacy);
 die;
