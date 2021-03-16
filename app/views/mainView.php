@@ -1,7 +1,6 @@
 <?php
 
 use PitouFW\Core\Request;
-use PitouFW\Entity\Page;
 use function PitouFW\Core\t;
 use function PitouFW\Core\webroot;
 
@@ -16,18 +15,15 @@ use function PitouFW\Core\webroot;
     <meta name="robots" content="index, follow" />
     <title><?= $TITLE ?? L::meta_title ?></title>
 
-    <?php if (Request::get()->getArg(0) !== 'p'):
-        if (Request::get()->getArg(0) === 'home'): ?>
-            <link rel="canonical" href="https://justauth.me/<?= t()->getAppliedLang() ?>" />
-    <?php endif;
-        foreach (ACCEPTED_LANGUAGES as $lang):
-            if (t()->getAppliedLang() !== $lang): ?>
-                <link rel="alternate" hreflang="<?= $lang ?>" href="https://justauth.me/<?= $lang . Request::get()->getRoute() ?>" />
-            <?php endif;
-        endforeach;
-    else: ?>
-        <link rel="canonical" href="https://justauth.me<?= Request::get()->getRoute() ?>" />
-    <?php endif ?>
+<?php if (Request::get()->getArg(0) !== 'p'):
+if (Request::get()->getArg(0) === 'home'): ?>
+    <link rel="canonical" href="https://justauth.me/<?= t()->getAppliedLang() ?>/" />
+<?php endif; ?>
+    <link rel="alternate" hreflang="x-default" href="https://justauth.me/" />
+<?php foreach (ACCEPTED_LANGUAGES as $lang): ?>
+    <link rel="alternate" hreflang="<?= $lang ?>" href="https://justauth.me/<?= $lang . Request::get()->getRoute() ?>" />
+<?php endforeach;
+endif ?>
 
     <meta property="og:title" content="<?= $TITLE ?? L::meta_title ?>" />
     <meta property="og:description" content="<?= L::meta_description ?>" />
@@ -140,9 +136,9 @@ use function PitouFW\Core\webroot;
                 <div class="row align-items-center">
                     <div class="col-md-6 small"><?= L::footer_copyright_copyright ?> &copy; <?= NAME ?> 2019 - <?= date('Y'); ?> &middot; <?= L::footer_copyright_all_rights ?>.</div>
                     <div class="col-md-6 text-md-right small">
-                        <a href="<?= WEBROOT ?>fr" title="<?= L::footer_langs_fr ?>"><img src="<?= IMG ?>flags/fr.svg" height="20"></a>
+                        <a href="<?= WEBROOT ?>fr/" title="<?= L::footer_langs_fr ?>"><img src="<?= IMG ?>flags/fr.svg" height="20"></a>
                         &middot;
-                        <a href="<?= WEBROOT ?>en" title="<?= L::footer_langs_en ?>"><img src="<?= IMG ?>flags/us.svg" height="20"></a>
+                        <a href="<?= WEBROOT ?>en/" title="<?= L::footer_langs_en ?>"><img src="<?= IMG ?>flags/us.svg" height="20"></a>
                     </div>
                 </div>
             </div>
