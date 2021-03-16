@@ -97,7 +97,7 @@ endif ?>
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                                 <div class="text-uppercase-expanded text-xs mb-4"><?= L::footer_products_label ?></div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><a href="#"><?= L::footer_products_app ?></a></li>
+                                    <li class="mb-2"><a href="<?= webroot() ?>"><?= L::footer_products_app ?></a></li>
                                     <li class="mb-2"><a href="https://developers.justauth.me"><?= L::footer_products_panel ?></a></li>
                                     <!-- <li class="mb-2"><a href="#"><?= L::footer_products_prestashop ?></a></li> -->
                                     <li class="mb-2"><a href="https://developers.justauth.me/download/wordpress"><?= L::footer_products_wordpress ?></a></li>
