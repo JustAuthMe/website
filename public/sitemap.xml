@@ -6,7 +6,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://justauth.me" />
     <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/" />
-    <lastmod>2021-03-16 19:50:00</lastmod>
+    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://justauth.me/press" />
     <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/press" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/press" />
-    <lastmod>2021-03-16 19:50:00</lastmod>
+    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -23,7 +23,7 @@
     <loc>https://justauth.me/en/p/frequently-asked-questions</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/p/frequently-asked-questions" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/p/foire-aux-questions" />
-    <lastmod>2021-03-16 19:50:00</lastmod>
+    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -31,7 +31,7 @@
     <loc>https://justauth.me/en/p/terms-of-service</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/p/terms-of-service" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/p/conditions-generales-dutilisation" />
-    <lastmod>2021-03-16 19:50:00</lastmod>
+    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -39,7 +39,7 @@
     <loc>https://justauth.me/en/p/legal-notice</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/p/legal-notice" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/p/mentions-legales" />
-    <lastmod>2021-03-16 19:50:00</lastmod>
+    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -47,7 +47,7 @@
     <loc>https://justauth.me/en/p/privacy-policy</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/p/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/p/politique-de-confidentialite" />
-    <lastmod>2021-03-16 19:50:00</lastmod>
+    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
