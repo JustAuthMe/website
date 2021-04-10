@@ -12,10 +12,10 @@ use function PitouFW\Core\webroot;
                     <h1 class="page-header-title"><?= L::baseline ?></h1>
                     <p class="page-header-text mb-5"><?= L::home_header_concept(NAME) ?></p>
                     <div class="mb-5 mb-lg-0">
-                        <a class="mr-3" href="<?= L::links_stores_apple ?>">
+                        <a class="mr-3" href="<?= webroot() ?>app/ios">
                             <img class="mb-2" src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
                         </a>
-                        <a href="<?= L::links_stores_google ?>">
+                        <a href="<?= webroot() ?>app/android">
                             <img class="mb-2" src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
                         </a>
                     </div>
@@ -106,20 +106,6 @@ use function PitouFW\Core\webroot;
 </section>
 <section class="bg-light py-10">
     <div class="container">
-        <div class="row brands text-gray-500 align-items-center justify-content-around mb-5">
-            <a href="https://restau-sans-contact.fr" class="mb-2">
-                <img src="<?= IMG ?>partners/rsc.png" height="45" alt="Restau sans contact" />
-            </a>
-            <a href="https://my-seedbox.com" class="mb-2">
-                <img src="<?= IMG ?>partners/msb.png" height="45" alt="My Seedbox" />
-            </a>
-            <a href="https://odysseeverte.fr" class="mb-2">
-                <img src="<?= IMG ?>partners/ov.png" height="45" alt="L'Odyssée Verte" />
-            </a>
-            <a href="https://pulseheberg.com" class="mb-2">
-                <img src="<?= IMG ?>partners/ph.png" height="45" alt="PulseHeberg" />
-            </a>
-        </div>
         <div class="row justify-content-center z-1">
             <div class="col-lg-8" data-aos="fade-up">
                 <div class="card lift mb-n15">
@@ -266,16 +252,6 @@ use function PitouFW\Core\webroot;
                     </div>
                 </div>
                 <div class="member mb-3">
-                    <a href="https://victorlabro.fr">
-                        <img src="<?= IMG ?>team/victor.jpg">
-                    </a>
-                    <div class="name">Victor Labro</div>
-                    <div class="role">
-                        <?= L::home_team_victor_line1 ?><br />
-                        <?= L::home_team_victor_line2 ?>
-                    </div>
-                </div>
-                <div class="member mb-3">
                     <a href="https://charley.sedeau.com">
                         <img src="<?= IMG ?>team/charley.jpg">
                     </a>
@@ -297,8 +273,8 @@ use function PitouFW\Core\webroot;
                 <p class="lead mb-5 mb-lg-0"><?= L::home_download_subtitle ?></p>
             </div>
             <div class="col-lg-6 text-lg-right">
-                <a class="mr-3" href="<?= L::links_stores_apple ?>"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
-                <a href="<?= L::links_stores_google ?>"><img class="mb-2" src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
+                <a class="mr-3" href="<?= webroot() ?>app/ios"><img class="mb-2" src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
+                <a href="<?= webroot() ?>app/android"><img class="mb-2" src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/></a>
             </div>
         </div>
     </div>

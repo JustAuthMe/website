@@ -2,7 +2,7 @@
     <div id="engagements">
         <section class="engagement">
             <div class="picture">
-                <img src="/assets/img/pic01.jpg">
+                <img src="<?= IMG ?>pic01.jpg">
             </div>
             <div class="text pt-lg-4">
                 <h4>Connectez-vous partout</h4>
@@ -17,7 +17,7 @@
         </section>
         <section class="engagement">
             <div class="picture">
-                <img src="/assets/img/pic02.jpg">
+                <img src="<?= IMG ?>pic02.jpg">
             </div>
             <div class="text pt-lg-4">
                 <h4>Plus de sécurité, aucun mot de passe</h4>
@@ -32,7 +32,7 @@
         </section>
         <section class="engagement">
             <div class="picture">
-                <img src="/assets/img/pic03.jpg">
+                <img src="<?= IMG ?>pic03.jpg">
             </div>
             <div class="text pt-lg-4">
                 <h4>Contrôlez votre vie privée</h4>
@@ -46,7 +46,7 @@
         </section>
         <section class="engagement">
             <div class="picture">
-                <img src="/assets/img/pic04.jpg">
+                <img src="<?= IMG ?>pic04.jpg">
             </div>
             <div class="text pt-lg-4">
                 <h4>Multi-plateformes, multi-usages</h4>
