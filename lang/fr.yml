@@ -1,3 +1,4 @@
+flag: '🇫🇷'
 meta:
   title: 'JustAuthMe - Oubliez vos mots de passe'
   description: 'Avec l''application JustAuthMe, oubliez vos mots de passe et dites adieu aux formulaires. Connectez-vous partout et sans effort grâce à la biométrie.'
@@ -12,6 +13,7 @@ errors:
 links:
   pages:
     faq: 'foire-aux-questions'
+    manifest: 'manifeste'
     legal:
       notice: 'mentions-legales'
       privacy: 'politique-de-confidentialite'
@@ -27,10 +29,9 @@ cookies:
     decline: 'Refuser'
 navbar:
   home: 'Accueil'
-  concept: 'Le concept'
   pricing: 'Tarifs'
-  faq: 'FAQ'
-  blog: 'Blog'
+  mission: 'Notre mission'
+  manifest: 'Manifeste'
   developers: 'Ajouter à mon site'
   rescue: 'Mobile perdu ?'
 footer:
@@ -46,6 +47,7 @@ footer:
     github: 'Github'
     blog: 'Blog'
     press: 'Kit presse'
+    faq: 'FAQ'
   contact:
     label: 'Contact'
     press: 'Presse'
@@ -137,6 +139,9 @@ home:
   download:
     title: 'Prêt à oublier vos mots de passe ?'
     subtitle: 'Téléchargez gratuitement notre application dès maintenant !'
+mission:
+  title: 'En quoi consiste notre mission ?'
+  desc: 'Chez JustAuthMe, nous croyons que les formulaires et les mots de passe sont des systèmes hors d''âges que nous voulons remplacer par des des technologies fiables et innovantes.'
 press:
   release:
     title: 'Communiqué de presse'

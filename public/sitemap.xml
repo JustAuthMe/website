@@ -11,13 +11,21 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://justauth.me/press</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://justauth.me/press" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/press" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/press" />
-    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
+    <loc>https://justauth.me/our-mission</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://justauth.me/our-mission" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/our-mission" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/our-mission" />
+    <lastmod>2021-05-10T23:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://justauth.me/en/p/manifest</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/p/manifest" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/p/manifeste" />
+    <lastmod>2021-05-10T23:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://justauth.me/en/p/frequently-asked-questions</loc>
@@ -26,6 +34,15 @@
     <lastmod>2021-03-16T19:50:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://justauth.me/press</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://justauth.me/press" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://justauth.me/en/press" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://justauth.me/fr/press" />
+    <lastmod>2021-03-16T19:50:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://justauth.me/en/p/terms-of-service</loc>

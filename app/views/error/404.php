@@ -1,4 +1,4 @@
-<div class="text-center mt-10">
+<div class="text-center my-10">
     <h1 class="error mx-auto">404</h1>
     <p class="lead text-gray-800 mb-5"><?= L::errors_404 ?></p>
     <p class="text-gray-500 mb-0"><?= L::problem ?></p>

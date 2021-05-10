@@ -1,3 +1,4 @@
+flag: '🇬🇧'
 meta:
   title: 'JustAuthMe - Forget your passwords'
   description: 'With the JustAuthMe app, forget your passwords and say goodbye to forms. Login everywhere effortlessly thanks to biometric.'
@@ -12,6 +13,7 @@ errors:
 links:
   pages:
     faq: 'frequently-asked-questions'
+    manifest: 'manifest'
     legal:
       notice: 'legal-notice'
       privacy: 'privacy-policy'
@@ -27,10 +29,9 @@ cookies:
     decline: 'Decline'
 navbar:
   home: 'Home'
-  concept: 'The concept'
   pricing: 'Pricing'
-  faq: 'FAQ'
-  blog: 'Blog'
+  mission: 'Our mission'
+  manifest: 'Manifest'
   developers: 'Add to my website'
   rescue: 'Lost phone?'
 footer:
@@ -46,6 +47,7 @@ footer:
     github: 'Github'
     blog: 'Blog'
     press: 'Press kit'
+    faq: 'FAQ'
   contact:
     label: 'Contact'
     press: 'Press'
@@ -137,6 +139,9 @@ home:
   download:
     title: 'Ready to forget your passwords?'
     subtitle: 'Download our app for free right now!'
+mission:
+  title: 'What is our mission ?'
+  desc: 'At JustAuthMe, we believe that forms and passwords are out of date systems that we want to remplace by reliables and innovative technologies.'
 press:
   release:
     title: 'Press realease (FR)'

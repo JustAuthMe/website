@@ -2,6 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.lang-selector .dropdown-menu {
+    min-width: auto;
+}
+
+.lang-selector #selected-lang,
+.lang-selector .dropdown-item {
+    color: #888;
+}
+
 #engagements {
     min-height: 100vh;
     margin: 0 auto;

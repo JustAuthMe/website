@@ -39,12 +39,21 @@ class Request {
 		return '';
 	}
 
-    public function getLang() {
-        return $this->lang;
+    public function getArgs(): array {
+        return $this->args;
     }
 
-    public function getRoute() {
-        return '/' . ($this->args[0] !== 'home' ? implode('/', $this->args) : '');;
+    public function getRoute(bool $with_lang = false): string {
+        if ($with_lang) {
+            return '/' . $_GET['arg'];
+        }
+
+        $route = '/' . implode('/', $this->getArgs());
+        return preg_replace("#^\/home#", '/', $route);
+    }
+
+    public function getLang() {
+        return $this->lang;
     }
 }
 

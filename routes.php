@@ -11,5 +11,6 @@ const ROUTES = [
     'p' => 'page',
     'app' => 'app',
     'privacy-policy.pdf' => 'privacy-policy',
-    'press' => 'press'
+    'press' => 'press',
+    'our-mission' => 'mission'
 ];

@@ -11,7 +11,7 @@ use function PitouFW\Core\webroot;
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="<?= L::meta_description ?>" />
+    <meta name="description" content="<?= $DESC ?? L::meta_description ?>" />
     <meta name="robots" content="index, follow" />
     <title><?= $TITLE ?? L::meta_title ?></title>
 
@@ -19,14 +19,14 @@ use function PitouFW\Core\webroot;
 if (Request::get()->getArg(0) === 'home'): ?>
     <link rel="canonical" href="https://justauth.me/<?= t()->getAppliedLang() ?>/" />
 <?php endif; ?>
-    <link rel="alternate" hreflang="x-default" href="https://justauth.me/" />
+    <link rel="alternate" hreflang="x-default" href="https://justauth.me<?= Request::get()->getRoute() ?>" />
 <?php foreach (ACCEPTED_LANGUAGES as $lang): ?>
     <link rel="alternate" hreflang="<?= $lang ?>" href="https://justauth.me/<?= $lang . Request::get()->getRoute() ?>" />
 <?php endforeach;
 endif ?>
 
     <meta property="og:title" content="<?= $TITLE ?? L::meta_title ?>" />
-    <meta property="og:description" content="<?= L::meta_description ?>" />
+    <meta property="og:description" content="<?= $DESC ?? L::meta_description ?>" />
     <meta property="og:site_name" content="<?= NAME ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://justauth.me/assets/img/open-graph.jpg" />
@@ -61,14 +61,22 @@ endif ?>
                     <a class="navbar-brand text-primary" href="<?= webroot(); ?>">
                         <img style="height: 1.5rem;" src="<?= IMG ?>logo-txt.svg" alt="">
                     </a>
+                    <div class="nav-item dropdown lang-selector">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="selected-lang">
+                            <?= L::flag . ' ' . strtoupper(t()->getAppliedLang()) ?>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="<?= WEBROOT ?>en<?= Request::get()->getRoute() ?>">🇬🇧 EN</a>
+                            <a class="dropdown-item" href="<?= WEBROOT ?>fr<?= Request::get()->getRoute() ?>">🇫🇷 FR</a>
+                        </div>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto mr-lg-5">
-                            <li class="nav-item"><a class="nav-link" href="<?= webroot(); ?>"><?= L::navbar_home ?> </a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="#"><?= L::navbar_concept ?> </a></li> -->
+                        <ul class="navbar-nav ml-auto mr-lg-2">
+                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>"><?= L::navbar_home ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>#pricing"><?= L::navbar_pricing ?> </a></li>
-                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>p/<?= L::links_pages_faq ?>"><?= L::navbar_faq ?> </a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://blog.justauth.me/"><?= L::navbar_blog ?> </a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>our-mission"><?= L::navbar_mission ?> </a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>/p/<?= L::links_pages_manifest ?>"><?= L::navbar_manifest ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="https://core.justauth.me/rescue"><?= L::navbar_rescue ?> </a></li>
                         </ul>
                         <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://developers.justauth.me/"><i class="fas fa-star"></i>&nbsp;&nbsp;<?= L::navbar_developers ?></i></a>
@@ -110,6 +118,7 @@ endif ?>
                                     <li class="mb-2"><a href="https://blog.justauth.me/"><?= L::footer_resources_blog ?></a></li>
                                     <li class="mb-2"><a href="https://github.com/justauthme"><?= L::footer_resources_github ?></a></li>
                                     <li class="mb-2"><a href="https://developers.justauth.me/documentation"><?= L::footer_resources_doc ?></a></li>
+                                    <li class="mb-2"><a href="<?= webroot() ?>p/<?= L::links_pages_faq ?>"><?= L::footer_resources_faq ?></a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -177,6 +186,9 @@ endif ?>
         duration: 600,
         once: true
     });
+    document.querySelector('.lang-selector').onchange = e => {
+        document.location.href = '<?= WEBROOT ?>' + e.target.value + '/';
+    };
 </script>
 <?php if (isset($status)): ?>
     <script type="text/javascript">
