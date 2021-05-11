@@ -1,5 +1,6 @@
 <?php
 
+use function PitouFW\Core\t;
 use function PitouFW\Core\webroot;
 
 ?>
@@ -10,12 +11,10 @@ use function PitouFW\Core\webroot;
                 <div class="col-lg-6" data-aos="fade-up">
                     <h1 class="page-header-title"><?= L::mission_title ?></h1>
                     <p class="page-header-text mb-5">
-                        Nous croyons fermement que les formulaires et les mots de passe ont fait leur temps. De nos jours,
-                        il existe des technologies plus fiables, robustes et faciles d'utilisation qui remplaceront à
-                        terme totalement les mots de passe.
+                        <?= L::mission_subtitle ?>
                     </p>
                     <a class="btn btn-blue btn-marketing rounded-pill lift lift-sm" href="<?= webroot() ?>p/<?= L::links_pages_manifest ?>">
-                        <i class="fas fa-newspaper"></i>&nbsp;&nbsp;Lire le manifeste
+                        <i class="fas fa-newspaper"></i>&nbsp;&nbsp;<?= L::mission_manifest ?>
                     </a>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="50"><img class="img-fluid" src="<?= IMG ?>our_mission.svg" /></div>
@@ -49,31 +48,63 @@ use function PitouFW\Core\webroot;
 </header>
 <section class="bg-light">
     <div class="container">
-        <div class="row py-10">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="<?= IMG ?>our_mission.svg" />
+        <div class="row py-5 py-lg-10">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="img-fluid" src="<?= IMG ?>mission_1.svg" />
             </div>
             <div class="col-lg-6">
-                <h1>lorem ipsum</h1>
-                <p>lorem ipsum</p>
-            </div>
-        </div>
-        <div class="row py-10">
-            <div class="col-lg-6">
-                <h1>lorem ipsum</h1>
-                <p>lorem ipsum</p>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="<?= IMG ?>our_mission.svg" />
+                <h1><?= L::mission_focus_passwd_title ?></h1>
+                <p class="text-justify">
+                    <?= L::mission_focus_passwd_content ?>
+                </p>
             </div>
         </div>
-        <div class="row py-10">
+        <div class="row py-5 py-lg-10">
             <div class="col-lg-6">
-                <img class="img-fluid" src="<?= IMG ?>our_mission.svg" />
+                <h1><?= L::mission_focus_forms_title ?></h1>
+                <p class="text-justify">
+                    <?= L::mission_focus_forms_content ?>
+                </p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="img-fluid" src="<?= IMG ?>mission_2.svg" />
+            </div>
+        </div>
+        <div class="row py-5 py-lg-10">
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="img-fluid" src="<?= IMG ?>mission_3.svg" />
             </div>
             <div class="col-lg-6">
-                <h1>lorem ipsum</h1>
-                <p>lorem ipsum</p>
+                <h1><?= L::mission_focus_privacy_title ?></h1>
+                <p class="text-justify">
+                    <?= L::mission_focus_privacy_content ?>
+                </p>
+            </div>
+        </div>
+        <div class="row py-5 py-lg-10">
+            <div class="col-lg-6">
+                <h1><?= L::mission_focus_auth_title ?></h1>
+                <p class="text-justify">
+                    <?= L::mission_focus_auth_content ?>
+                </p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img class="img-fluid" src="<?= IMG ?>mission_4.svg" />
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="card z-1 mb-n5">
+                    <div class="card-body text-center py-5">
+                        <h2 class="mb-3"><?= L::mission_revolution ?></h2>
+                        <a class="mr-3" href="<?= webroot() ?>app/ios">
+                            <img class="mb-2" src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
+                        </a>
+                        <a href="<?= webroot() ?>app/android">
+                            <img class="mb-2" src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

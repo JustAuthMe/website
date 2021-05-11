@@ -4,6 +4,7 @@ meta:
   description: 'With the JustAuthMe app, forget your passwords and say goodbye to forms. Login everywhere effortlessly thanks to biometric.'
 problem: 'It seems like something''s wrong here...'
 back: 'Go back'
+read_more: 'Read more'
 errors:
   401: 'Authentication required'
   403: 'Forbidden access'
@@ -142,6 +143,22 @@ home:
 mission:
   title: 'What is our mission ?'
   desc: 'At JustAuthMe, we believe that forms and passwords are out of date systems that we want to remplace by reliables and innovative technologies.'
+  subtitle: 'we firmly believe that forms and passwords did their time. Nowadays, there are more reliable, strong and easy-to-use technologies that will eventually completely replace passwords.'
+  manifest: 'Read the manifeste'
+  focus:
+    passwd:
+      title: 'Put password to retirement'
+      content: 'The password was created in the 1960'' by a MIT professor, Fernando Corbató, in order for multiple researchers to work on a single computer while keeping their work private.<br /><br />50 years later, he will end up calling his invention a "security nightmare" because of its numerous flaws. It''s an outdated technology that no longer answers to our world problems.<br /><br />At JustAuthMe, we believe that password did it''s time and that we now need to replace it by more moderns, secured and easy-to-use technologies: biometrics, QR-Codes or NFC are some examples.'
+    forms:
+      title: 'Free ourselves from the nightmare of forms'
+      content: 'We fill a lot of forms everyday in which we always repeat the same data: e-mail, first name, last name, street adress, etc.<br /><br />Yet our phone and our computer already know these data, so why should we still fill them again and again, day after day?<br /><br />The JustAuthMe app, in addition to allow a true passwordless login, offers you the possibility to register without filling a single form field. The data are simply transferred from your phone to the serviceyou wish to subscribe to, no frills.'
+    privacy:
+      title: 'Keep privacy private'
+      content: 'The data you fill into the JustAuthMe app are only stored on your smartphone. There are only transmitted to the services you chose to login to for the first time.<br /><br />thanks to the JustAuthMe advanced  decision system, you can choose which data to share or not at avery new login. You are 100% in control of your data and what you do with it.<br /><br />We do not hold any personal data about you, not even your e-mail address. However, if you change your phone, we are still capable of recognizing you and to give your accounts accesses back. This is the JustAuthMe eco-system.'
+    auth:
+      title: 'Revolutionize authentication'
+      content: 'With JustAuthMe, we offer modern, secured and incredibly easy to handle eco-system. Just scan a QR-Code and accept the login attempt on your smartphone thanks to biometrics. That''s it, you''re logged in.<br /><br />A such simplicity and great speed are made possible thanks to a brand new design, from a blank sheet of paper.<br /><br />We ignored the existing to completely re-think the authentication experience. With JustAuthMe, log yourself in one click to your favorites services, without any password or form.'
+  revolution: 'Join the JustAuthMe revolution'
 press:
   release:
     title: 'Press realease (FR)'

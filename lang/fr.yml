@@ -4,6 +4,7 @@ meta:
   description: 'Avec l''application JustAuthMe, oubliez vos mots de passe et dites adieu aux formulaires. Connectez-vous partout et sans effort grâce à la biométrie.'
 problem: 'Il semblerait qu''il y ai un problème par ici...'
 back: 'Retour'
+read_more: 'En savoir plus'
 errors:
   401: 'Authentification requise'
   403: 'Accès interdit'
@@ -142,6 +143,22 @@ home:
 mission:
   title: 'En quoi consiste notre mission ?'
   desc: 'Chez JustAuthMe, nous croyons que les formulaires et les mots de passe sont des systèmes hors d''âges que nous voulons remplacer par des des technologies fiables et innovantes.'
+  subtitle: 'Nous croyons fermement que les formulaires et les mots de passe ont fait leur temps. De nos jours, il existe des technologies plus fiables, robustes et faciles d''utilisation qui remplaceront à terme totalement les mots de passe.'
+  manifest: 'Lire le manifeste'
+  focus:
+    passwd:
+      title: 'Mettre le mot de passe à la retraite'
+      content: 'Le mot de passe a été créé dans les années 1960 par un professeur du MIT, Fernando Corbató, pour que plusieurs chercheurs puissent travailler sur un même ordinateur tout en gardant leur travail privé.<br /><br />50 ans plus tard, il finira par qualifier son invention de "cauchemar" en matière de sécurité tant ses failles sont nombreuses. Il s''agit d''une technologie hors d''âge qui ne répond plus au problématiques de notre monde.<br /><br />Chez JustAuthMe, nous pensons que le mot de passe a fait son temps et qu''il faut désormais le remplacer par des technologies plus modernes,  sécurisées et faciles d''utilisation : la biométrie, les Codes QR ou le NFC en sont des exemples.'
+    forms:
+      title: 'Se libérer du calvaire des formulaires'
+      content: 'Nous remplissons chaque jour tout un tas de formulaires pour y répéter toujours les mêmes informations : e-mail, nom, prénom, adresse, etc.<br /><br />Pourtant notre téléphone et notre ordinateur connaissent déjà ces informations, alors pourquoi devons-nous les re-rentrer, encore et encore ?<br /><br />L''application JustAuthMe, en plus de permettre une connexion sans mot de passe, vous offre la possibilité de vous inscrire sans remplir un seul champ de formulaire. Les informations sont simplement transférées de votre téléphone vers le service auquel vous souhaitez souscrire, sans fioriture.'
+    privacy:
+      title: 'Garder privée la vie privée'
+      content: 'Les informations que vous renseignez dans l''application JustAuthMe sont uniquement stockées sur votre smartphone. Elles ne sont transmises qu''aux services auxquels vous vous connectez pour la première fois. <br /><br /> Grâce au système de décision avancé de JustAuthMe, vous pouvez choisir quelle information partager ou non à chaque nouvelle connexion. vous êtes 100% maître de vos données et de ce que vous en faite. <br /><br /> Nous ne possédons aucune donnée à caractère personnel vous concernant, pas même votre adresse e-mail. Pourtant si vous changez de téléphone, nous sommes quand même capable de vous reconnaître et de vous redonner accès à tous vos comptes. C''est ça l''éco-système JustAuthMe.'
+    auth:
+      title: 'Révolutionner l''authentification'
+      content: 'Avec JustAuthMe, nous proposons un éco-système moderne, sécurisé et incroyablement facile à prendre en main. Scannez un QR-Code et acceptez la connexion sur votre smartphone grâce à la biométrie. C''est bon, vous êtes connecté. <br /><br /> Une telle simplicité et une si grande rapidité sont rendues possible grâce à une conception nouvelle, partie d''une feuille blanche. <br /><br /> Nous avons fait fi de l''existant pour repenser entièrement l''expérience de l''authentification. Avec JustAuthMe, connectez-vous en un clic à vos services préférés, sans mot de passe ni formulaire.'
+  revolution: 'Rejoignez à la révolution JustAuthMe'
 press:
   release:
     title: 'Communiqué de presse'

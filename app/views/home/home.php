@@ -10,7 +10,11 @@ use function PitouFW\Core\webroot;
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <h1 class="page-header-title"><?= L::baseline ?></h1>
-                    <p class="page-header-text mb-5"><?= L::home_header_concept(NAME) ?></p>
+                    <p class="page-header-text mb-5">
+                        <?= L::home_header_concept(NAME) ?>
+                        <br />
+                        <a href="<?= webroot() ?>our-mission"><?= L::read_more ?> &rarr;</a>
+                    </p>
                     <div class="mb-5 mb-lg-0">
                         <a class="mr-3" href="<?= webroot() ?>app/ios">
                             <img class="mb-2" src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" style="height: 3rem;"/>

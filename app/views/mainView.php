@@ -144,11 +144,6 @@ endif ?>
                 <hr class="my-5" />
                 <div class="row align-items-center">
                     <div class="col-md-6 small"><?= L::footer_copyright_copyright ?> &copy; <?= NAME ?> 2019 - <?= date('Y'); ?> &middot; <?= L::footer_copyright_all_rights ?>.</div>
-                    <div class="col-md-6 text-md-right small">
-                        <a href="<?= WEBROOT ?>fr/" title="<?= L::footer_langs_fr ?>"><img src="<?= IMG ?>flags/fr.svg" height="20"></a>
-                        &middot;
-                        <a href="<?= WEBROOT ?>en/" title="<?= L::footer_langs_en ?>"><img src="<?= IMG ?>flags/us.svg" height="20"></a>
-                    </div>
                 </div>
             </div>
         </footer>
