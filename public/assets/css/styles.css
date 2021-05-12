@@ -65,7 +65,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -88,7 +88,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -9118,7 +9118,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9220,11 +9220,10 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
   text-align: start;
   text-decoration: none;
   text-shadow: none;
@@ -17521,110 +17520,80 @@ body {
 }
 
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Thin.otf");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ThinItalic.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-ThinItalic.ttf");
   font-weight: 100;
   font-style: italic;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraLight.otf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraLightItalic.otf");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Light.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-LightItalic.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-LightItalic.ttf");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Regular.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-RegularItalic.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-RegularItalic.ttf");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Medium.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-MediumItalic.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-MediumItalic.ttf");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-SemiBold.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-SemiBold.ttf");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-SemiBoldItalic.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-SemiBoldItalic.ttf");
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Bold.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-BoldItalic.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraBold.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Black.ttf");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-ExtraBoldItalic.otf");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-Black.otf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis/Metropolis-BlackItalic.otf");
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-BlackItalic.ttf");
   font-weight: 800;
   font-style: italic;
 }
