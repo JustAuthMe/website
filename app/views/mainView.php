@@ -76,7 +76,7 @@ endif ?>
                             <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>"><?= L::navbar_home ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>#pricing"><?= L::navbar_pricing ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>our-mission"><?= L::navbar_mission ?> </a></li>
-                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>/p/<?= L::links_pages_manifest ?>"><?= L::navbar_manifest ?> </a></li>
+                            <li class="nav-item"><a class="nav-link" href="<?= webroot() ?>p/<?= L::links_pages_manifest ?>"><?= L::navbar_manifest ?> </a></li>
                             <li class="nav-item"><a class="nav-link" href="https://core.justauth.me/rescue"><?= L::navbar_rescue ?> </a></li>
                         </ul>
                         <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://developers.justauth.me/"><i class="fas fa-star"></i>&nbsp;&nbsp;<?= L::navbar_developers ?></i></a>
