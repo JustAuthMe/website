@@ -22,6 +22,6 @@ use PitouFW\Entity\Page;
 </header>
 <section class="bg-white py-10 page">
     <div class="container">
-        <?= str_replace('<h2>', '<hr class="my-5" /><h2 class="mb-3">', $parser->text($page->getContent())) ?>
+        <?= preg_replace("#^<hr class=\"my-5\" />#", '', str_replace('<h2>', '<hr class="my-5" /><h2 class="mb-3">', $parser->text($page->getContent()))) ?>
     </div>
 </section>
