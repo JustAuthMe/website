@@ -87,7 +87,7 @@ use function PitouFW\Core\webroot;
         </svg>
     </div>
 </header>
-<section class="bg-white py-10">
+<section class="bg-white pt-10 pb-5 pb-lg-10">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-4 mb-5 mb-lg-0">
@@ -108,8 +108,37 @@ use function PitouFW\Core\webroot;
         </div>
     </div>
 </section>
-<section class="bg-light py-10">
+<section class="bg-light pt-5 pb-10 py-lg-10">
     <div class="container">
+        <div class="row brands text-gray-500 align-items-center mb-2 mb-lg-5">
+            <div class="d-none d-lg-flex col-lg-1 justify-content-center mb-5 mb-lg-0"></div>
+            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
+                <a href="https://www.nicematin.com/faits-de-societe/covid-19-deux-cas-suspects-de-variant-indien-detectes-dans-les-alpes-maritimes-685087"
+                   target="_blank" rel="noopener">
+                    <img src="<?= IMG ?>partners/nice-matin.png" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
+                <a href="https://www.maregionsud.fr/actualites/detail/la-creativite-et-le-potentiel-des-startups-du-sud-vont-rayonner-au-salon-viva-technology" target="_blank" rel="noopener">
+                    <img src="<?= IMG ?>partners/region-sud.png" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
+                <a href="https://vivatechnology.com/startups-big-list/" target="_blank" rel="noopener">
+                    <img src="<?= IMG ?>partners/viva-tech.png" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-sm-0">
+                <a href="https://www.youtube.com/watch?v=Tr7O3OwJVZ0&t=541s" target="_blank" rel="noopener">
+                    <img src="<?= IMG ?>partners/youtube.png" class="img-fluid" />
+                </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-sm-0">
+                <a href="https://datawire.fr/" target="_blank" rel="noopener">
+                    <img src="<?= IMG ?>partners/datawire.png" class="img-fluid" />
+                </a>
+            </div>
+        </div>
         <div class="row justify-content-center z-1">
             <div class="col-lg-8" data-aos="fade-up">
                 <div class="card lift mb-n15">
@@ -123,7 +152,7 @@ use function PitouFW\Core\webroot;
         </div>
     </div>
 </section>
-<section class="bg-white py-10" id="pricing">
+<section class="bg-white py-5 py-lg-10" id="pricing">
     <div class="container">
         <div class="text-center mb-5">
             <h2><?= L::home_pricing_title ?></h2>
@@ -204,7 +233,7 @@ use function PitouFW\Core\webroot;
         </div>
     </div>
 </section>
-<section class="bg-light py-10">
+<section class="bg-light py-5 py-lg-10">
     <div id="team">
         <h1><?= L::home_team_title ?></h1>
         <div class="content">
@@ -269,7 +298,7 @@ use function PitouFW\Core\webroot;
         </div>
     </div>
 </section>
-<section class="bg-white py-10">
+<section class="bg-white py-5 py-lg-10">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -310,7 +339,7 @@ use function PitouFW\Core\webroot;
 <script type="text/javascript">
     setTimeout(() => {
         const ytvid = document.getElementById('ytvid');
-        ytvid.src = 'https://www.youtube-nocookie.com/embed/Z54dVXdGLqk?rel=0&controls=1&playsinline=1';
+        ytvid.src = 'https://www.youtube-nocookie.com/embed/<?= L::home_video ?>?rel=0&controls=1&playsinline=1';
         ytvid.style.height = parseInt(ytvid.clientWidth * .5625) + 'px';
     }, 1000);
 
