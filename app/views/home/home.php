@@ -113,7 +113,7 @@ use function PitouFW\Core\webroot;
         <div class="row brands text-gray-500 align-items-center mb-2 mb-lg-5">
             <div class="d-none d-lg-flex col-lg-1 justify-content-center mb-5 mb-lg-0"></div>
             <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
-                <a href="https://www.nicematin.com/faits-de-societe/covid-19-deux-cas-suspects-de-variant-indien-detectes-dans-les-alpes-maritimes-685087"
+                <a href="https://www.nicematin.com/economie/justauthme-l-appli-varoise-qui-supprime-les-mots-de-passe-685087"
                    target="_blank" rel="noopener">
                     <img src="<?= IMG ?>partners/nice-matin.png" class="img-fluid" />
                 </a>
