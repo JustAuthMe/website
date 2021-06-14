@@ -4,6 +4,16 @@ use PitouFW\Core\Controller;
 use PitouFW\Core\Data;
 use function PitouFW\Core\t;
 
+if (isset($_GET['mtm_campaign'])) {
+    switch ($_GET['mtm_campaign']) {
+        case 'tshirt':
+        case 'leaflet':
+        case 'flyer':
+            Controller::renderView('home/login', false);
+            die;
+    }
+}
+
 if (POST) {
     if ($_POST['email'] !== '') {
         $postdata = http_build_query([

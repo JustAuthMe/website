@@ -30,9 +30,9 @@ endif ?>
     <meta property="og:site_name" content="<?= NAME ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://justauth.me/assets/img/open-graph.jpg" />
-    <meta property="og:url" content="https://justauth.me" />
+    <meta property="og:url" content="https://justauth.me/<?= t()->getAppliedLang() ?>/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@justauthmefr" />
+    <meta name="twitter:site" content="@justauthme" />
     <meta name="apple-itunes-app" content="app-id=1506495629" />
 
     <link href="<?= CSS ?>styles.css" rel="stylesheet" />

@@ -1,6 +1,7 @@
 <?php
 
 use PitouFW\Core\Controller;
+use PitouFW\Core\Data;
 
-\PitouFW\Core\Data::get()->add('TITLE', L::footer_resources_press);
+Data::get()->add('TITLE', L::footer_resources_press);
 Controller::renderView('home/press');
