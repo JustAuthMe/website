@@ -40,10 +40,10 @@ use function PitouFW\Core\t;
                 <img src="<?= IMG ?>logo-txt-white.png" class="logo" alt="JustAuthMe" />
             </a>
             <div class="stores">
-                <a href="<?= L::links_stores_apple ?>">
+                <a href="<?= L::links_stores_apple ?>" class="apple">
                     <img src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" alt="Apple App Store" />
                 </a>
-                <a href="<?= L::links_stores_google ?>">
+                <a href="<?= L::links_stores_google ?>" class="google">
                     <img src="<?= IMG ?>stores_badges/google_<?= t()->getAppliedLang() ?>.png" alt="Google Play Store" />
                 </a>
             </div>

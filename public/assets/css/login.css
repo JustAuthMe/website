@@ -62,3 +62,7 @@ a:active {
 .stores a img {
     max-width: 150px;
 }
+
+.stores a.google img {
+    max-width: 166px;
+}
