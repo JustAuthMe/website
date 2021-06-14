@@ -36,7 +36,9 @@ use function PitouFW\Core\t;
                     class="animation"
             ></lottie-player>
             <p class="text"><?= L::login_text ?></p>
-            <img src="<?= IMG ?>logo-txt-white.png" class="logo" alt="JustAuthMe" />
+            <a href="https://justauth.me/<?= t()->getAppliedLang() ?>/">
+                <img src="<?= IMG ?>logo-txt-white.png" class="logo" alt="JustAuthMe" />
+            </a>
             <div class="stores">
                 <a href="<?= L::links_stores_apple ?>">
                     <img src="<?= IMG ?>stores_badges/apple_<?= t()->getAppliedLang() ?>.png" alt="Apple App Store" />

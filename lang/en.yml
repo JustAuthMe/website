@@ -179,3 +179,7 @@ press:
     president: 'President'
     ceo: 'CEO'
     cmo: 'CMO'
+login:
+  title: 'JustAuthMe - What if it was this simple?'
+  success: 'You are logged in!'
+  text: 'What if register and login to your favorite websites and apps was as simple as that? Without any password or any form.'
