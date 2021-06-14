@@ -181,5 +181,5 @@ press:
     cmo: 'CMO'
 login:
   title: 'JustAuthMe - What if it was this simple?'
-  success: 'You are logged in!'
+  success: 'You''re now logged in!'
   text: 'What if register and login to your favorite websites and apps was as simple as that? Without any password or any form.'
