@@ -29,7 +29,7 @@ endif ?>
     <meta property="og:description" content="<?= $DESC ?? L::meta_description ?>" />
     <meta property="og:site_name" content="<?= NAME ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://justauth.me/assets/img/open-graph.jpg" />
+    <meta property="og:image" content="https://justauth.me/assets/img/open-graph_<?= t()->getAppliedLang() ?>.png" />
     <meta property="og:url" content="https://justauth.me/<?= t()->getAppliedLang() ?>/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@justauthme" />
